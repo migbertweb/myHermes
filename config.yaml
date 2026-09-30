@@ -734,15 +734,15 @@ mcp_servers:
     args:
       - /home/migbert/.npm-global/lib/node_modules/@a.ardeshir/youtube-mcp/index.js
       - --env
-      - YOUTUBE_CLIENT_ID=245033979911-0qekgmiq2i6lh8lmlqqa0fhst92vr9qn.apps.googleusercontent.com
+      - YOUTUBE_CLIENT_ID=${YOUTUBE_CLIENT_ID}
       - --env
-      - YOUTUBE_CLIENT_SECRET=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
+      - YOUTUBE_CLIENT_SECRET=${YOUTUBE_CLIENT_SECRET}
       - --env
-      - YOUTUBE_REFRESH_TOKEN=1//0hQC4vs0VemkNCgYIARAAGBESNgF-L9IryrrHD9IhDFIqmm84sM3bVvE5w3zJ3NC927ibT3S4izZ31q14DfC72Xb320ZXIpePvw
+      - YOUTUBE_REFRESH_TOKEN=${YOUTUBE_REFRESH_TOKEN}
       - --env
       - YOUTUBE_REDIRECT_URI=http://localhost:8080/callback
       - --env
-      - YOUTUBE_ACCESS_TOKEN=ya29.a0Aa7MYirRTXff3kZayMmyfggvoHKz6SnHQ1ksrohpHMaHR2eNS0D7GRDVurwIs_cRjRjYy2OTH573wFgl9TStrGNdixGuHIHMycWfwTbFnKOqbK9z_OE4V6iQMyUu931p5zNORwySOG5nmvNBAxZbWvHU934CbVRgXIj4dd34to-BXaiH18AymuI5T-oXSrdu5uLQVEAaCgYKAdgSARcSFQHGX2Mio9ZAWTIH1MJmuDh5YdaLsg0206
+      - YOUTUBE_ACCESS_TOKEN=${YOUTUBE_ACCESS_TOKEN}
     command: node
     enabled: true
   codebase-memory:
