@@ -1,0 +1,11 @@
+{
+  "slug": "freelancerflow",
+  "name": "FreelanceFlow",
+  "description": "Sistema de Registro y Control de Proyectos Freelancer",
+  "icon": "🎮",
+  "color": "cyan",
+  "default_workdir": "/home/migbert/proyectos/Freelancer/FreelancerFlow",
+  "project_id": null,
+  "created_at": 1786233641,
+  "archived": false
+}

@@ -1,0 +1,1 @@
+Freelancer app repo: /home/migbert/proyectos/Freelancer (FastAPI backend in backend/, React frontend in app/). Backend has its own venv at backend/venv (Python, pydantic 2.10.4); run tests with `backend/venv/bin/python -m pytest backend/tests/`. Board flow for this repo: qualifier QA creates bug cards -> coder-back fixes -> qualifier re-verifies.

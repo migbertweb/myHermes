@@ -1,0 +1,15 @@
+model:
+  provider: custom
+  default: dev-front
+  base_url: http://localhost:20128/v1
+  api_key: ${OMNIROUTE_API_KEY}
+fallback_providers:
+  - provider: custom
+    model: Agenticus
+    base_url: http://localhost:20128/v1
+    key_env: OMNIROUTE_API_KEY
+_config_version: 33
+
+platforms:
+  api_server:
+    enabled: false

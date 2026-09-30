@@ -1,0 +1,129 @@
+# Calavera — Día de Muertos sugar-skull theme.
+# Warm marigold orange, hot pink, bone/cream, and deep purple on a dark base.
+# Features a @-skull banner_hero with a warm bone→gold→orange gradient.
+
+name: calavera
+description: Calavera — Día de Muertos sugar-skull theme (marigold, pink, bone, purple on dark)
+
+colors:
+  # Banner — marigold orange, pink, teal, bone/cream
+  banner_border: "#ff6b35"       # Marigold orange
+  banner_title:  "#ff006e"       # Hot pink
+  banner_accent: "#00b4d8"       # Bright teal
+  banner_dim:    "#7b2cbf"       # Deep purple
+  banner_text:   "#f4e4c1"       # Bone/cream
+
+  # UI — warm and vibrant
+  ui_accent: "#ff6b35"           # Orange
+  ui_label:  "#ff006e"           # Hot pink
+  ui_ok:     "#06d6a0"           # Emerald green
+  ui_error:  "#ef476f"           # Pink-red
+  ui_warn:   "#ffd166"           # Golden yellow
+
+  # Input / output
+  prompt:          "#f4e4c1"     # Bone/cream
+  input_rule:      "#3a0ca3"     # Deep indigo
+  response_border: "#ff6b35"     # Marigold orange
+
+  # Status bar
+  status_bar_bg:       "#0a0a1a" # Very dark navy/black
+  status_bar_text:     "#f4e4c1" # Bone/cream
+  status_bar_strong:   "#ff006e" # Hot pink
+  status_bar_dim:      "#7b2cbf" # Purple
+  status_bar_good:     "#06d6a0" # Green
+  status_bar_warn:     "#ffd166" # Yellow
+  status_bar_bad:      "#ef476f" # Red
+  status_bar_critical: "#ff006e" # Hot pink
+
+  # Voice / completion menus
+  voice_status_bg:                "#0a0a1a" # Very dark
+  completion_menu_bg:             "#1a1a2e" # Dark navy
+  completion_menu_current_bg:     "#3a0ca3" # Indigo
+  completion_menu_meta_bg:        "#0a0a1a" # Very dark
+  completion_menu_meta_current_bg: "#4a1a6e" # Purple
+
+  # Session
+  session_label:  "#ff006e"      # Hot pink
+  session_border: "#7b2cbf"      # Purple
+
+spinner:
+  waiting_faces:
+    - "💀"
+    - "☠️"
+    - "💀🎵"
+    - "🌺💀"
+    - "💀✨"
+  thinking_faces:
+    - "💀🤔"
+    - "💀💭"
+    - "🌺💭"
+    - "💀⚡"
+    - "💀🔥"
+  thinking_verbs:
+    - "pintando calaveritas"
+    - "quemando copal"
+    - "recogiendo cempasúchil"
+    - "bailando con la muerte"
+    - "encendiendo velas"
+    - "cruzando el puente"
+    - "tejiendo recuerdos"
+    - "ofrendando tokens"
+  wings:
+    - ["🌺💀", "💀🌺"]
+    - ["🕯️✨", "✨🕯️"]
+    - ["🦋🔥", "🔥🦋"]
+    - ["🌙💀", "💀🌙"]
+
+branding:
+  agent_name: "Viernes"
+  welcome: "[#ff006e]☠️[/] [#f4e4c1]La calavera despierta.[/] [#7b2cbf]¿Qué ofrenda me traes hoy?[/]"
+  goodbye: "La calavera se despide... nos vemos del otro lado. 🌺💀🕯️"
+  response_label: " 💀 Calavera "
+  prompt_symbol: "🌺 ❯ "
+  help_header: "☠️ Ofrenda de Comandos"
+
+tool_prefix: "┊"
+
+tool_emojis:
+  terminal: "💀"
+  web_search: "🔮"
+  web_fetch: "🦋"
+  read_file: "📜"
+  write_file: "✎"
+  patch: "🩹"
+  search_files: "🔍"
+  execute_code: "⚙"
+  browser_navigate: "🧭"
+  delegate_task: "🌺"
+  memory: "🕯️"
+  clarify: "❓"
+  cronjob: "↻"
+  process: "⚙"
+  todo: "☐"
+  skill_view: "📖"
+  skills_list: "🧶"
+  text_to_speech: "🔔"
+  vision_analyze: "👁️"
+
+banner_hero: |
+  [#ffd166]@@@@@@@@@@@@@@@    @@@@@@@@@@@@@@@@[/]
+  [#ffd166]@@@@@@@@@@@@          .@@@@@@@@@@@@[/]
+  [#ff9f1c]@@@@@@@@@@              .@@@@@@@@@@[/]
+  [#f4e4c1]@@@@@@@@@                 @@@@@@@@@[/]
+  [#f4e4c1]@@@@@@@@  @@@        @@@. @@@@@@@@@[/]
+  [#f4e4c1]@@@@@@@@ .@@@@@@@ @@@@@@@  @@@@@@@@[/]
+  [#f4e4c1]@@@@@@@. @@@@@@@@@@@@@@@@   @@@@@@@[/]
+  [#f4e4c1]@@@@@@.  @@@@..@@@@. .@@@  .@@@@@@@[/]
+  [#f4e4c1]@@@@@@.  .@.@..@@@@@@.@.@. ..@@@@@@[/]
+  [#f4e4c1]@@@@@..  @@@@@@@@@@@@@@@@.  ..@@@@@[/]
+  [#f4e4c1]@@@@...   @@@@@@@@@@@@@@.   ..@@@@@[/]
+  [#f4e4c1]@@@@...    @@@@@.@@@@@@@    ...@@@@[/]
+  [#f4e4c1]@@@....    @@@@@@@@@@@@    ....@@@@[/]
+  [#f4e4c1]@@@..@..    @@@ ....@@     ..@..@@@[/]
+  [#f4e4c1]@@.@@@@.      @@@@@@@     .@@@@..@@[/]
+  [#f4e4c1]@.@@@@@@@    @ @@@@@@@    @@@@@@@@@[/]
+  [#ff9f1c]@@@@@@@@@@   @@@@@@@@   .@@@@@@@@@@[/]
+  [#ff6b35]@@@@@@@@@@@@  @@@@@@@  @@@@@@@@@@@@[/]
+  [#ff6b35]@@@@@@@@@@@@@..@@@@@ .@@@@@@@@@@@@@[/]
+  [#ff6b35]@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@@@[/]
+  [#f4e4c1]@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@[/]

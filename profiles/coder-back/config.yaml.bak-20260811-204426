@@ -1,0 +1,32 @@
+model:
+  provider: custom
+  default: dev-back
+  base_url: http://localhost:20128/v1
+  api_key: ${OMNIROUTE_API_KEY}
+fallback_providers:
+- provider: custom
+  model: Agenticus
+  base_url: http://localhost:20128/v1
+  key_env: OMNIROUTE_API_KEY
+_config_version: 33
+platforms:
+  api_server:
+    enabled: false
+mcp_servers:
+  omniroute:
+    url: http://localhost:20128/api/mcp/stream
+    headers:
+      Authorization: Bearer ${OMNIROUTE_API_KEY}
+    timeout: 180
+    connect_timeout: 60
+    enabled: true
+onboarding:
+  seen:
+    tool_progress_prompt: true
+auxiliary:
+  kanban_decomposer:
+    provider: deepseek
+    model: ''
+    base_url: ''
+    api_key: ''
+    timeout: 180

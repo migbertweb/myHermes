@@ -1,0 +1,30 @@
+model:
+  provider: deepseek
+  default: deepseek-v4-flash
+  base_url: https://api.deepseek.com
+  api_key: ${DEEPSEEK_API_KEY}
+fallback_providers: []
+auxiliary:
+  kanban_decomposer:
+    provider: deepseek
+    model: ''
+    base_url: ''
+    api_key: ''
+    timeout: 180
+onboarding:
+  seen:
+    tool_progress_prompt: true
+_config_version: 49
+platforms:
+  api_server:
+    enabled: false
+mcp_servers:
+  penpot:
+    url: http://localhost:4401/mcp
+    enabled: true
+plugins:
+  scan_on_install: true
+  enabled:
+    - superpowers
+  disabled: []
+agent: {}

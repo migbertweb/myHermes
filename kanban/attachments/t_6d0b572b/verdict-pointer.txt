@@ -1,0 +1,6 @@
+# Veredicto QA → Manager
+
+Reader the full report at:
+/home/migbert/proyectos/Freelancer/FreelancerFlow/qa-evidence/verdict.md
+
+[Copied into kanban comment on the task].

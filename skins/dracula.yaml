@@ -1,0 +1,122 @@
+# Dracula — deep purple night with pink, cyan, and green neon accents.
+# Based on the Dracula base16 color palette by Mike Barkmin.
+name: dracula
+description: "Dracula Theme — deep purple night with pink, cyan, and green neon accents. Based on base16 Dracula palette."
+
+colors:
+  # Banner — cyan borders, pink titles, seafoam accents on deep purple
+  banner_border: "#62d6e8"   # base0D — cyan
+  banner_title:  "#ea51b2"   # base08 — pink/magenta
+  banner_accent: "#a1efe4"   # base0C — seafoam
+  banner_dim:    "#626483"   # base03 — muted
+  banner_text:   "#e9e9f4"   # base05 — foreground
+
+  # UI
+  ui_accent: "#62d6e8"       # base0D — cyan
+  ui_label:  "#b45bcf"       # base09 — purple
+  ui_ok:     "#00f769"       # base0A — green
+  ui_error:  "#ea51b2"       # base08 — pink
+  ui_warn:   "#ebff87"       # base0B — yellow
+
+  # Input / output
+  prompt:          "#e9e9f4" # base05 — foreground
+  input_rule:      "#626483" # base03 — muted
+  response_border: "#ea51b2" # base08 — pink
+
+  # Status bar (deep purple bg)
+  status_bar_bg:       "#282936" # base00 — background
+  status_bar_text:     "#e9e9f4" # base05 — foreground
+  status_bar_strong:   "#62d6e8" # base0D — cyan
+  status_bar_dim:      "#626483" # base03 — muted
+  status_bar_good:     "#00f769" # base0A — green
+  status_bar_warn:     "#ebff87" # base0B — yellow
+  status_bar_bad:      "#b45bcf" # base09 — purple
+  status_bar_critical: "#ea51b2" # base08 — pink
+
+  # Voice / completion menus
+  voice_status_bg:                "#3a3c4e" # base01
+  completion_menu_bg:             "#282936" # base00
+  completion_menu_current_bg:     "#4d4f68" # base02
+  completion_menu_meta_bg:        "#3a3c4e" # base01
+  completion_menu_meta_current_bg: "#4d4f68" # base02
+
+  # Session
+  session_label:  "#a1efe4" # base0C — seafoam
+  session_border: "#626483" # base03 — muted
+
+spinner:
+  waiting_faces:
+    - "(🧛)"
+    - "(🦇)"
+    - "(🌙)"
+  thinking_faces:
+    - "(🧛)"
+    - "(🦇)"
+    - "(🌙)"
+  thinking_verbs:
+    - "stalking the night"
+    - "sinking fangs"
+    - "casting shadow"
+    - "shapeshifting"
+    - "drinking deep"
+  wings:
+    - ["⟪🧛", "🧛⟫"]
+    - ["⟪🦇", "🦇⟫"]
+    - ["⟪🌙", "🌙⟫"]
+
+branding:
+  agent_name: "Dracula Agent"
+  welcome: "[bold #ea51b2]🦇 Welcome to Dracula Agent[/] — [dim #626483]the night awaits your command. Type /help for commands.[/]"
+  goodbye: "[bold #b45bcf]🦇 Until the next moonrise… Goodbye![/]"
+  response_label: " 🧛 Dracula "
+  prompt_symbol: "🦇 ❯ "
+  help_header: "(🧛) Dracula Commands"
+
+tool_prefix: "┊"
+
+tool_emojis:
+  terminal: "🦇"
+  web_search: "🔮"
+  web_fetch: "🔮"
+  read_file: "📜"
+  write_file: "✍"
+  patch: "🩹"
+  search_files: "🔍"
+  execute_code: "⚡"
+  browser_navigate: "🌐"
+  delegate_task: "🧛"
+  mixture_of_agents: "🦇"
+  memory: "💭"
+  clarify: "❓"
+  cronjob: "⏰"
+  process: "⚙"
+  todo: "📋"
+  skill_view: "📖"
+  skills_list: "📚"
+  text_to_speech: "🎤"
+  vision_analyze: "👁"
+
+banner_logo: |
+  [bold #ea51b2]  _    ___                              ___                    __ [/]
+  [bold #ea51b2] | |  / (_)__  _________  ___  _____   /   | ____ ____  ____  / /_[/]
+  [bold #b45bcf] | | / / / _ \/ ___/ __ \/ _ \/ ___/  / /| |/ __ `/ _ \/ __ \/ __/[/]
+  [bold #b45bcf] | |/ / /  __/ /  / / / /  __(__  )  / ___ / /_/ /  __/ / / / /_  [/]
+  [bold #62d6e8] |___/_/\___/_/  /_/ /_/\___/____/  /_/  |_\__, /\___/_/ /_/\__/  [/]
+  [dim #62d6e8]                                          /____/                    [/]
+  [dim #626483]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[/]
+  [italic dim #a1efe4]  🦇  viernes a tu servicio  🦇[/]
+
+banner_hero: |
+  [bold #ea51b2]@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@[/]
+  [bold #b45bcf]@@@@@@@@@@@@@@@       @@@.@@@@.@@@@.@@@@.@@@       @@@@@@@@@@@@@@@[/]
+  [bold #62d6e8]@@@@@@@@@@@@@@@       @@@@@@@        @@@@@@@       @@@@@@@@@@@@@@@[/]
+  [bold #ea51b2]@@@@@@@@@@@@@@@@@@  @@    🦇          🦇    @@  @@@@@@@@@@@@@@@@@@[/]
+  [bold #b45bcf]@@@@@@@@@@@@@@@@@@               🌙             @@@@@@@@@@@@@@@@@@[/]
+  [bold #62d6e8]@@@@@@@@@@@@@@.@@@@@                     @    @@@.@@@@@@.@@@@@@@@@[/]
+  [bold #ea51b2]@@@@@@@@@@@@@@.@@@@@@.@@                  .@@@@@@.@@@@@@.@@@@@@@@@[/]
+  [bold #b45bcf]@@@@@@@@@@@@@@.@@@@@@.@@@@@@.@      @@@@@@.@@@@@@.@@@@@@.@@@@@@@@@[/]
+  [bold #62d6e8]@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@[/]
+  [bold #ea51b2]@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@[/]
+  [bold #b45bcf]@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@[/]
+  [dim #62d6e8]@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@[/]
+  [dim #ea51b2]@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@[/]

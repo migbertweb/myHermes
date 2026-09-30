@@ -1,0 +1,158 @@
+{
+  "jobs": [
+    {
+      "id": "91257a99eb30",
+      "name": "Verificación de Actualizaciones del Sistema",
+      "prompt": "Verifica si hay actualizaciones de sistema pendientes en el Linux host (usando `apt list --upgradable` o el gestor correspondiente). \n\nSi NO hay actualizaciones, no respondas nada (mantente en silencio).\n\nSi HAY actualizaciones disponibles, envía un mensaje al usuario informándole que hay actualizaciones pendientes y pregúntale: '¿Deseas que las instale?'",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 6 * * *",
+        "display": "0 6 * * *"
+      },
+      "schedule_display": "0 6 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 112
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-06-01T09:42:43.792033+00:00",
+      "next_run_at": "2026-09-30T06:00:00-03:00",
+      "last_run_at": "2026-09-29T20:20:31.420264-03:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "10165249",
+        "chat_name": "🇻🇪 Migbert - Piro",
+        "thread_id": null
+      },
+      "enabled_toolsets": [
+        "terminal"
+      ],
+      "workdir": null,
+      "profile": null,
+      "fire_claim": null,
+      "failure_streak": 0,
+      "last_dispatch": {
+        "scheduled_at": "2026-09-29T06:00:00-03:00",
+        "dispatched_at": "2026-09-29T20:19:29.668516-03:00",
+        "lateness_seconds": 51569.7,
+        "kind": "catch_up"
+      }
+    },
+    {
+      "id": "5bf362d1bcb7",
+      "name": "Status Hetzner diario",
+      "prompt": "",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": null,
+      "model_snapshot": null,
+      "base_url": null,
+      "script": "status-hetzner.sh",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 6 * * *",
+        "display": "0 6 * * *"
+      },
+      "schedule_display": "0 6 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 87
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-06-29T17:16:05.699042-03:00",
+      "next_run_at": "2026-09-30T06:00:00-03:00",
+      "last_run_at": "2026-09-29T20:19:45.733494-03:00",
+      "last_status": "delivery_failed",
+      "last_error": null,
+      "last_delivery_error": "no delivery target resolved for deliver=telegram",
+      "deliver": "telegram",
+      "origin": null,
+      "enabled_toolsets": null,
+      "workdir": null,
+      "fire_claim": null,
+      "failure_streak": 0,
+      "last_dispatch": {
+        "scheduled_at": "2026-09-29T06:00:00-03:00",
+        "dispatched_at": "2026-09-29T20:19:29.668516-03:00",
+        "lateness_seconds": 51569.7,
+        "kind": "catch_up"
+      }
+    },
+    {
+      "id": "ab56c32093b4",
+      "name": "Agenda — Notificaciones",
+      "prompt": "",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": null,
+      "model_snapshot": null,
+      "base_url": null,
+      "script": "agenda-check-notify.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "interval",
+        "minutes": 2,
+        "display": "every 2m"
+      },
+      "schedule_display": "every 2m",
+      "repeat": {
+        "times": null,
+        "completed": 25101
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-07-25T11:44:55.014148-03:00",
+      "next_run_at": "2026-09-29T21:45:38.311479-03:00",
+      "last_run_at": "2026-09-29T21:43:38.311479-03:00",
+      "last_status": "error",
+      "last_error": "Script exited with code 1\nstderr:\nTraceback (most recent call last):\n  File \"<string>\", line 16, in <module>\n    exec(code, main.__dict__)\n    ~~~~^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/migbert/.hermes/scripts/agenda-check-notify.py\", line 13, in <module>\n    result = subprocess.run(\n        [SCRIPT, \"notify\"],\n        capture_output=True, text=True, cwd=\"/home/piro/.hermes/agenda\"\n    )\n  File \"/home/migbert/.hermes/tools/python-3.14.7+202****0901-linux-x64/lib/python3.14/subprocess.py\", line 555, in run\n    with Popen(*popenargs, **kwargs) as process:\n         ~~~~~^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/migbert/.hermes/tools/python-3.14.7+202****0901-linux-x64/lib/python3.14/subprocess.py\", line 1039, in __init__\n    self._execute_child(args, executable, preexec_fn, close_fds,\n    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n                        pass_fds, cwd, env,\n                        ^^^^^^^^^^^^^^^^^^^\n    ...<5 lines>...\n                        gid, gids, uid, umask,\n                        ^^^^^^^^^^^^^^^^^^^^^^\n                        start_new_session, process_group)\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/migbert/.hermes/tools/python-3.14.7+202****0901-linux-x64/lib/python3.14/subprocess.py\", line 1990, in _execute_child\n    raise child_exception_type(errno_num, err_msg, err_filename)\nFileNotFoundError: [Errno 2] No such file or directory: '/home/piro/.hermes/agenda'",
+      "last_delivery_error": "platform 'telegram' not configured/enabled",
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "10165249",
+        "chat_name": "🇻🇪 Migbert - Piro",
+        "thread_id": null,
+        "user_id": "10165249"
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "fire_claim": null,
+      "failure_streak": 478,
+      "last_dispatch": {
+        "scheduled_at": "2026-09-29T21:42:41.805108-03:00",
+        "dispatched_at": "2026-09-29T21:43:29.315755-03:00",
+        "lateness_seconds": 47.5,
+        "kind": "on_time"
+      }
+    }
+  ],
+  "updated_at": "2026-09-29T21:43:38.314320-03:00"
+}

@@ -1,0 +1,213 @@
+model:
+  api_key: ''
+  base_url: http://192.168.1.8:20128/v1
+  default: gemma4:31b
+  provider: ollama-cloud
+fallback_providers:
+  - provider: custom
+    model: auto/best-reasoning
+compression:
+  enabled: true
+  threshold: 0.5
+  target_ratio: 0.2
+  protect_last_n: 20
+  hygiene_hard_message_limit: 400
+  protect_first_n: 3
+  abort_on_summary_failure: false
+  codex_gpt55_autoraise: true
+  in_place: false
+auxiliary:
+  vision:
+    provider: auto
+    model: ''
+    timeout: 120
+    download_timeout: 30
+  compression:
+    provider: auto
+    model: ''
+    timeout: 120
+  skills_hub:
+    provider: auto
+    model: ''
+    timeout: 30
+  approval:
+    provider: auto
+    model: ''
+    timeout: 30
+  mcp:
+    provider: auto
+    model: ''
+    timeout: 30
+  title_generation:
+    provider: auto
+    model: ''
+    timeout: 30
+    language: ''
+  tts_audio_tags:
+    provider: deepseek
+    model: ''
+    base_url: ''
+    api_key: ''
+    timeout: 30
+  triage_specifier:
+    provider: auto
+    model: ''
+    timeout: 120
+  kanban_decomposer:
+    provider: auto
+    model: ''
+    timeout: 180
+  profile_describer:
+    provider: auto
+    model: ''
+    timeout: 60
+  curator:
+    provider: auto
+    model: ''
+    timeout: 600
+  monitor:
+    provider: deepseek
+    model: ''
+    base_url: ''
+    api_key: ''
+    timeout: 60
+  background_review:
+    provider: deepseek
+    model: ''
+    base_url: ''
+    api_key: ''
+    timeout: 120
+  moa_reference:
+    provider: deepseek
+    model: ''
+    base_url: ''
+    api_key: ''
+    timeout: 600
+  moa_aggregator:
+    provider: deepseek
+    model: ''
+    base_url: ''
+    api_key: ''
+    timeout: 600
+  web_extract:
+    model: google/gemma-4-31b-it:free
+    provider: openrouter
+    timeout: 360
+delegation:
+  model: nvidia/nemotron-3-super-120b-a12b:free
+  provider: openrouter
+  base_url: ''
+  api_key: ''
+  api_mode: ''
+  inherit_mcp_toolsets: true
+  max_iterations: 250
+  child_timeout_seconds: 600
+  reasoning_effort: ''
+  max_concurrent_children: 10
+  max_spawn_depth: 1
+  orchestrator_enabled: true
+  subagent_auto_approve: false
+moa:
+  default_preset: default
+  active_preset: default
+  presets:
+    default:
+      reference_models:
+        - base_url: http://192.168.1.8:20128/v1
+          model: antigravity/gemini-2.5-flash-thinking
+          provider: custom
+        - model: deepseek-v4-flash-free
+          provider: opencode-zen
+        - model: nvidia/nemotron-3-super-120b-a12b:free
+          provider: openrouter
+      aggregator:
+        provider: deepseek
+        model: deepseek-v4-flash
+      enabled: true
+      reference_max_tokens: 600
+    eco:
+      aggregator:
+        base_url: http://192.168.1.8:20128/v1
+        model: antigravity/gemini-2.5-flash-thinking
+        provider: custom
+      enabled: true
+      reference_max_tokens: 600
+      reference_models:
+        - base_url: http://192.168.1.8:20128/v1
+          model: antigravity/gemini-2.5-flash-lite
+          provider: custom
+        - model: mimo-v2.5-free
+          provider: opencode-zen
+    omni:
+      aggregator:
+        model: deepseek-v4-pro
+        provider: deepseek
+      enabled: true
+      reference_max_tokens: 1200
+      reference_models:
+        - base_url: http://192.168.1.8:20128/v1
+          model: antigravity/claude-opus-4-6-thinking-high
+          provider: custom
+        - base_url: http://192.168.1.8:20128/v1
+          model: auto/best-coding
+          provider: custom
+        - model: deepseek-v4-flash
+          provider: deepseek
+        - model: nvidia/nemotron-3-super-120b-a12b:free
+          provider: openrouter
+  aggregator:
+    model: deepseek-v4-flash
+    provider: deepseek
+  aggregator_temperature: 0.4
+  enabled: true
+  max_tokens: 4096
+  reference_max_tokens: 600
+  reference_models:
+    - model: deepseek-v4-flash-free
+      provider: opencode-zen
+    - model: mimo-v2.5-free
+      provider: opencode-zen
+  reference_temperature: 0.6
+command_allowlist:
+  - execute_code
+plugins:
+  enabled:
+    - mnemosyne
+  disabled: []
+_config_version: 49
+custom_providers: []
+fallback_model:
+  model: deepseek-v4-flash
+  provider: deepseek
+mcp_servers:
+  civitai-orchestration:
+    connect_timeout: 60
+    enabled: true
+    headers:
+      Authorization: Bearer ${CIVITAI_API_KEY}
+    timeout: 180
+    url: https://orchestration.civitai.com/mcp
+  drift:
+    headers:
+      Authorization: Bearer a4e163ef45fa0b4474159b9f14deff43f60a7f4d7f96b0e52184cf4d89d867aa
+    url: http://127.0.0.1:4731/mcp
+    enabled: true
+  mcp-image:
+    command: /home/migbert/.hermes/scripts/mcp-image-wrapper.sh
+    enabled: true
+  youtube-mcp:
+    args:
+      - /home/migbert/.npm-global/lib/node_modules/@a.ardeshir/youtube-mcp/index.js
+      - --env
+      - YOUTUBE_CLIENT_ID=245033979911-0qekgmiq2i6lh8lmlqqa0fhst92vr9qn.apps.googleusercontent.com
+      - --env
+      - YOUTUBE_CLIENT_SECRET=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
+      - --env
+      - YOUTUBE_REFRESH_TOKEN=1//0hQC4vs0VemkNCgYIARAAGBESNgF-L9IryrrHD9IhDFIqmm84sM3bVvE5w3zJ3NC927ibT3S4izZ31q14DfC72Xb320ZXIpePvw
+      - --env
+      - YOUTUBE_REDIRECT_URI=http://localhost:8080/callback
+      - --env
+      - YOUTUBE_ACCESS_TOKEN=ya29.a0Aa7MYirRTXff3kZayMmyfggvoHKz6SnHQ1ksrohpHMaHR2eNS0D7GRDVurwIs_cRjRjYy2OTH573wFgl9TStrGNdixGuHIHMycWfwTbFnKOqbK9z_OE4V6iQMyUu931p5zNORwySOG5nmvNBAxZbWvHU934CbVRgXIj4dd34to-BXaiH18AymuI5T-oXSrdu5uLQVEAaCgYKAdgSARcSFQHGX2Mio9ZAWTIH1MJmuDh5YdaLsg0206
+    command: node
+    enabled: true
+agent: {}

@@ -1,0 +1,4 @@
+# Fix USB devices blocking suspend (error -16 / EBUSY)
+# USB Disk 2.0 (1-1) and Intel Bluetooth (1-7) set to auto power control
+ACTION=="add", SUBSYSTEM=="usb", KERNEL=="1-1", ATTR{power/control}="auto"
+ACTION=="add", SUBSYSTEM=="usb", KERNEL=="1-7", ATTR{power/control}="auto"
