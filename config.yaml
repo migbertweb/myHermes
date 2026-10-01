@@ -48,7 +48,7 @@ agent:
 terminal:
   backend: local
   modal_mode: auto
-  cwd: .
+  cwd: '/home/migbert/proyectos'
   timeout: 180
   daemon_term_grace_seconds: 2
   env_passthrough: []
@@ -817,3 +817,9 @@ update:
     092c3dbf3cf6be7d:
       path: /home/migbert/.hermes/hermes-agent
       channel: main
+telemetry:
+  shared_metrics:
+    enabled: false
+    send: false
+desktop:
+  font_family: ''
