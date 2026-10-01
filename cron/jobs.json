@@ -122,15 +122,15 @@
       "schedule_display": "every 2m",
       "repeat": {
         "times": null,
-        "completed": 25161
+        "completed": 25162
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-07-25T11:44:55.014148-03:00",
-      "next_run_at": "2026-10-01T20:48:56.504836-03:00",
-      "last_run_at": "2026-10-01T20:46:56.504836-03:00",
+      "next_run_at": "2026-10-01T20:51:55.398887-03:00",
+      "last_run_at": "2026-10-01T20:49:55.398887-03:00",
       "last_status": "error",
       "last_error": "Script exited with code 1\nstderr:\nTraceback (most recent call last):\n  File \"<string>\", line 16, in <module>\n    exec(code, main.__dict__)\n    ~~~~^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/migbert/.hermes/scripts/agenda-check-notify.py\", line 13, in <module>\n    result = subprocess.run(\n        [SCRIPT, \"notify\"],\n        capture_output=True, text=True, cwd=\"/home/piro/.hermes/agenda\"\n    )\n  File \"/home/migbert/.hermes/tools/python-3.14.7+202****0901-linux-x64/lib/python3.14/subprocess.py\", line 555, in run\n    with Popen(*popenargs, **kwargs) as process:\n         ~~~~~^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/migbert/.hermes/tools/python-3.14.7+202****0901-linux-x64/lib/python3.14/subprocess.py\", line 1039, in __init__\n    self._execute_child(args, executable, preexec_fn, close_fds,\n    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n                        pass_fds, cwd, env,\n                        ^^^^^^^^^^^^^^^^^^^\n    ...<5 lines>...\n                        gid, gids, uid, umask,\n                        ^^^^^^^^^^^^^^^^^^^^^^\n                        start_new_session, process_group)\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/migbert/.hermes/tools/python-3.14.7+202****0901-linux-x64/lib/python3.14/subprocess.py\", line 1990, in _execute_child\n    raise child_exception_type(errno_num, err_msg, err_filename)\nFileNotFoundError: [Errno 2] No such file or directory: '/home/piro/.hermes/agenda'",
       "last_delivery_error": "platform 'telegram' not configured/enabled",
@@ -145,14 +145,14 @@
       "enabled_toolsets": null,
       "workdir": null,
       "fire_claim": null,
-      "failure_streak": 538,
+      "failure_streak": 539,
       "last_dispatch": {
-        "scheduled_at": "2026-10-01T20:45:55.781299-03:00",
-        "dispatched_at": "2026-10-01T20:46:47.658468-03:00",
-        "lateness_seconds": 51.9,
+        "scheduled_at": "2026-10-01T20:48:56.504836-03:00",
+        "dispatched_at": "2026-10-01T20:49:47.656806-03:00",
+        "lateness_seconds": 51.2,
         "kind": "on_time"
       }
     }
   ],
-  "updated_at": "2026-10-01T20:46:56.507145-03:00"
+  "updated_at": "2026-10-01T20:49:55.401489-03:00"
 }

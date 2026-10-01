@@ -117,6 +117,7 @@ shared/
 
 # --- Misc runtime ------------------------------------------------------------
 bin/
+cron/
 assets/avatar.png
 pastes/
 pets/
@@ -150,8 +151,6 @@ gateway.pid
 gateway_migration.json
 desktop-build-stamp.json
 web-ui-build-stamp.json
-tui-theme-boot.json
-tuya-raw.json
 spawn-ledger.json
 processes.json
 channel_directory.json
