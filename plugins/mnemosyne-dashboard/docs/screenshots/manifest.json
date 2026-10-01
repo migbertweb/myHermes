@@ -1,0 +1,164 @@
+[
+  {
+    "file": "desktop-dark-overview.png",
+    "theme": "dark",
+    "tab": "overview",
+    "viewport": "1440x1000",
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "title": "Mnemosyne Dashboard"
+  },
+  {
+    "file": "desktop-light-overview.png",
+    "theme": "light",
+    "tab": "overview",
+    "viewport": "1440x1000",
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "title": "Mnemosyne Dashboard"
+  },
+  {
+    "file": "desktop-dark-today.png",
+    "theme": "dark",
+    "tab": "today",
+    "viewport": "1440x1000",
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "title": "Mnemosyne Dashboard"
+  },
+  {
+    "file": "desktop-light-profile.png",
+    "theme": "light",
+    "tab": "profile",
+    "viewport": "1440x1000",
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "title": "Mnemosyne Dashboard"
+  },
+  {
+    "file": "desktop-dark-constellation.png",
+    "theme": "dark",
+    "tab": "constellation",
+    "viewport": "1440x1000",
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "title": "Mnemosyne Dashboard"
+  },
+  {
+    "file": "desktop-dark-neural.png",
+    "theme": "dark",
+    "tab": "neural",
+    "viewport": "1440x1000",
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "title": "Mnemosyne Dashboard"
+  },
+  {
+    "file": "desktop-dark-search.png",
+    "theme": "dark",
+    "tab": "search",
+    "viewport": "1440x1000",
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "title": "Mnemosyne Dashboard"
+  },
+  {
+    "file": "desktop-light-graph.png",
+    "theme": "light",
+    "tab": "graph",
+    "viewport": "1440x1000",
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "title": "Mnemosyne Dashboard"
+  },
+  {
+    "file": "desktop-dark-timeline.png",
+    "theme": "dark",
+    "tab": "timelineView",
+    "viewport": "1440x1000",
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "title": "Mnemosyne Dashboard"
+  },
+  {
+    "file": "mobile-dark-overview.png",
+    "theme": "dark",
+    "tab": "overview",
+    "viewport": "390x844",
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "title": "Mnemosyne Dashboard"
+  },
+  {
+    "file": "mobile-light-today.png",
+    "theme": "light",
+    "tab": "today",
+    "viewport": "390x844",
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "title": "Mnemosyne Dashboard"
+  },
+  {
+    "file": "mobile-dark-profile.png",
+    "theme": "dark",
+    "tab": "profile",
+    "viewport": "390x844",
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "title": "Mnemosyne Dashboard"
+  },
+  {
+    "file": "mobile-light-constellation.png",
+    "theme": "light",
+    "tab": "constellation",
+    "viewport": "390x844",
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "title": "Mnemosyne Dashboard"
+  },
+  {
+    "file": "mobile-dark-neural.png",
+    "theme": "dark",
+    "tab": "neural",
+    "viewport": "390x844",
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "title": "Mnemosyne Dashboard"
+  },
+  {
+    "file": "mobile-light-search.png",
+    "theme": "light",
+    "tab": "search",
+    "viewport": "390x844",
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "title": "Mnemosyne Dashboard"
+  },
+  {
+    "file": "mobile-dark-timeline.png",
+    "theme": "dark",
+    "tab": "timelineView",
+    "viewport": "390x844",
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "title": "Mnemosyne Dashboard"
+  },
+  {
+    "file": "mobile-light-graph.png",
+    "theme": "light",
+    "tab": "graph",
+    "viewport": "390x844",
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "title": "Mnemosyne Dashboard"
+  },
+  {
+    "file": "mobile-dark-settings.png",
+    "theme": "dark",
+    "tab": "settings",
+    "viewport": "390x844",
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "title": "Mnemosyne Dashboard"
+  }
+]

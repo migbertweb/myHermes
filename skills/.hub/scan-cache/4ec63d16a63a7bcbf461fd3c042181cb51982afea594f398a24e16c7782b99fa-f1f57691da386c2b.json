@@ -1,0 +1,25 @@
+{
+  "source": "official",
+  "source_url": "official/finance/pptx-author",
+  "bundle_hash": "sha256:4ec63d16a63a7bcbf461fd3c042181cb51982afea594f398a24e16c7782b99fa",
+  "scanner_version": "skills-guard-v1",
+  "verdict": "safe",
+  "trust_level": "builtin",
+  "findings": [
+    {
+      "pattern_id": "unpinned_pip_install",
+      "severity": "medium",
+      "category": "supply_chain",
+      "file": "SKILL.md",
+      "line": 30,
+      "match": "pip install \"python-pptx>=0.6\"",
+      "description": "pip install without version pinning"
+    }
+  ],
+  "rules": [
+    "unpinned_pip_install"
+  ],
+  "scanned_at": "2026-07-23T00:21:37.670280+00:00",
+  "summary": "pptx-author: safe \u2014 1 finding(s) in supply_chain",
+  "fresh": true
+}

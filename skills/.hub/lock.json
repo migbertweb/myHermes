@@ -1,0 +1,1209 @@
+{
+  "version": 1,
+  "installed": {
+    "baoyu-article-illustrator": {
+      "source": "official",
+      "identifier": "official/creative/baoyu-article-illustrator",
+      "trust_level": "builtin",
+      "scan_verdict": "backfilled",
+      "content_hash": "sha256:49c09a0ee50b2e59",
+      "install_path": "creative/baoyu-article-illustrator",
+      "files": [
+        "PORT_NOTES.md",
+        "SKILL.md",
+        "prompts/system.md",
+        "references/palettes/macaron.md",
+        "references/palettes/mono-ink.md",
+        "references/palettes/neon.md",
+        "references/palettes/warm.md",
+        "references/prompt-construction.md",
+        "references/style-presets.md",
+        "references/styles/blueprint.md",
+        "references/styles/chalkboard.md",
+        "references/styles/editorial.md",
+        "references/styles/elegant.md",
+        "references/styles/fantasy-animation.md",
+        "references/styles/flat-doodle.md",
+        "references/styles/flat.md",
+        "references/styles/ink-notes.md",
+        "references/styles/intuition-machine.md",
+        "references/styles/minimal.md",
+        "references/styles/nature.md",
+        "references/styles/notion.md",
+        "references/styles/pixel-art.md",
+        "references/styles/playful.md",
+        "references/styles/retro.md",
+        "references/styles/scientific.md",
+        "references/styles/screen-print.md",
+        "references/styles/sketch-notes.md",
+        "references/styles/sketch.md",
+        "references/styles/vector-illustration.md",
+        "references/styles/vintage.md",
+        "references/styles/warm.md",
+        "references/styles/watercolor.md",
+        "references/styles.md",
+        "references/usage.md",
+        "references/workflow.md"
+      ],
+      "metadata": {
+        "backfilled_from": "optional-skills"
+      },
+      "installed_at": "2026-06-07T16:17:12.712363+00:00",
+      "updated_at": "2026-06-07T16:17:12.712363+00:00"
+    },
+    "baoyu-comic": {
+      "source": "official",
+      "identifier": "official/creative/baoyu-comic",
+      "trust_level": "builtin",
+      "scan_verdict": "backfilled",
+      "content_hash": "sha256:4378c8ba82fd3649",
+      "install_path": "creative/baoyu-comic",
+      "files": [
+        "PORT_NOTES.md",
+        "SKILL.md",
+        "references/analysis-framework.md",
+        "references/art-styles/chalk.md",
+        "references/art-styles/ink-brush.md",
+        "references/art-styles/ligne-claire.md",
+        "references/art-styles/manga.md",
+        "references/art-styles/minimalist.md",
+        "references/art-styles/realistic.md",
+        "references/auto-selection.md",
+        "references/base-prompt.md",
+        "references/character-template.md",
+        "references/layouts/cinematic.md",
+        "references/layouts/dense.md",
+        "references/layouts/four-panel.md",
+        "references/layouts/mixed.md",
+        "references/layouts/splash.md",
+        "references/layouts/standard.md",
+        "references/layouts/webtoon.md",
+        "references/ohmsha-guide.md",
+        "references/partial-workflows.md",
+        "references/presets/concept-story.md",
+        "references/presets/four-panel.md",
+        "references/presets/ohmsha.md",
+        "references/presets/shoujo.md",
+        "references/presets/wuxia.md",
+        "references/storyboard-template.md",
+        "references/tones/action.md",
+        "references/tones/dramatic.md",
+        "references/tones/energetic.md",
+        "references/tones/neutral.md",
+        "references/tones/romantic.md",
+        "references/tones/vintage.md",
+        "references/tones/warm.md",
+        "references/workflow.md"
+      ],
+      "metadata": {
+        "backfilled_from": "optional-skills"
+      },
+      "installed_at": "2026-06-07T16:17:12.729881+00:00",
+      "updated_at": "2026-06-07T16:17:12.729881+00:00"
+    },
+    "creative-ideation": {
+      "source": "official",
+      "identifier": "official/creative/creative-ideation",
+      "trust_level": "builtin",
+      "scan_verdict": "backfilled",
+      "content_hash": "sha256:0045b1d6486f5e2e",
+      "install_path": "creative/creative-ideation",
+      "files": [
+        "SKILL.md",
+        "references/full-prompt-library.md"
+      ],
+      "metadata": {
+        "backfilled_from": "optional-skills"
+      },
+      "installed_at": "2026-06-07T16:17:12.732561+00:00",
+      "updated_at": "2026-06-07T16:17:12.732561+00:00"
+    },
+    "pixel-art": {
+      "source": "official",
+      "identifier": "official/creative/pixel-art",
+      "trust_level": "builtin",
+      "scan_verdict": "backfilled",
+      "content_hash": "sha256:b7ae08576dac501e",
+      "install_path": "creative/pixel-art",
+      "files": [
+        "ATTRIBUTION.md",
+        "SKILL.md",
+        "references/palettes.md",
+        "scripts/__init__.py",
+        "scripts/palettes.py",
+        "scripts/pixel_art.py",
+        "scripts/pixel_art_video.py"
+      ],
+      "metadata": {
+        "backfilled_from": "optional-skills"
+      },
+      "installed_at": "2026-06-07T16:17:12.734381+00:00",
+      "updated_at": "2026-06-07T16:17:12.734381+00:00"
+    },
+    "minecraft-modpack-server": {
+      "source": "official",
+      "identifier": "official/gaming/minecraft-modpack-server",
+      "trust_level": "builtin",
+      "scan_verdict": "backfilled",
+      "content_hash": "sha256:b10f2b1258e9012b",
+      "install_path": "gaming/minecraft-modpack-server",
+      "files": [
+        "SKILL.md"
+      ],
+      "metadata": {
+        "backfilled_from": "optional-skills"
+      },
+      "installed_at": "2026-06-07T16:17:12.735683+00:00",
+      "updated_at": "2026-06-07T16:17:12.735683+00:00"
+    },
+    "pokemon-player": {
+      "source": "official",
+      "identifier": "official/gaming/pokemon-player",
+      "trust_level": "builtin",
+      "scan_verdict": "backfilled",
+      "content_hash": "sha256:c1bc96fc9bb270c0",
+      "install_path": "gaming/pokemon-player",
+      "files": [
+        "SKILL.md"
+      ],
+      "metadata": {
+        "backfilled_from": "optional-skills"
+      },
+      "installed_at": "2026-06-07T16:17:12.736308+00:00",
+      "updated_at": "2026-06-07T16:17:12.736308+00:00"
+    },
+    "dspy": {
+      "source": "official",
+      "identifier": "official/mlops/research/dspy",
+      "trust_level": "builtin",
+      "scan_verdict": "backfilled",
+      "content_hash": "sha256:bbbe1148d27953a8",
+      "install_path": "mlops/research/dspy",
+      "files": [
+        "SKILL.md",
+        "references/examples.md",
+        "references/modules.md",
+        "references/optimizers.md"
+      ],
+      "metadata": {
+        "backfilled_from": "optional-skills"
+      },
+      "installed_at": "2026-06-07T16:17:12.738858+00:00",
+      "updated_at": "2026-06-07T16:17:12.738858+00:00"
+    },
+    "freelance-developer-coach": {
+      "source": "clawhub",
+      "identifier": "freelance-developer-coach",
+      "trust_level": "community",
+      "scan_verdict": "safe",
+      "content_hash": "sha256:9ec5e91cbdcbdc0f",
+      "install_path": "freelance-developer-coach",
+      "files": [
+        "skill-card.md",
+        "SKILL.md",
+        "_meta.json"
+      ],
+      "metadata": {},
+      "installed_at": "2026-07-21T22:31:36.282624+00:00",
+      "updated_at": "2026-07-21T22:31:36.282691+00:00"
+    },
+    "optimize-proposal-success-rate": {
+      "source": "browse-sh",
+      "identifier": "browse-sh/upwork.com/optimize-proposal-success-rate-4tnak4",
+      "trust_level": "community",
+      "scan_verdict": "safe",
+      "content_hash": "sha256:a2449e05422c899d",
+      "install_path": "optimize-proposal-success-rate",
+      "files": [
+        "SKILL.md"
+      ],
+      "metadata": {
+        "slug": "upwork.com/optimize-proposal-success-rate-4tnak4",
+        "hostname": "upwork.com",
+        "source_url": "https://github.com/browserbase/browse.sh/blob/main/skills/upwork.com/optimize-proposal-success-rate-4tnak4/SKILL.md",
+        "skill_md_url": "https://gh0lfhlmyzhg6tww.public.blob.vercel-storage.com/skills/upwork.com/optimize-proposal-success-rate-4tnak4/SKILL.md"
+      },
+      "installed_at": "2026-07-21T22:35:51.564056+00:00",
+      "updated_at": "2026-07-21T22:35:51.564108+00:00"
+    },
+    "freelance-proposal-engine": {
+      "source": "clawhub",
+      "identifier": "freelance-proposal-engine",
+      "trust_level": "community",
+      "scan_verdict": "safe",
+      "content_hash": "sha256:3463d4af3f5c1b9c",
+      "install_path": "freelance-proposal-engine",
+      "files": [
+        "skill-card.md",
+        "SKILL.md",
+        "_meta.json"
+      ],
+      "metadata": {},
+      "installed_at": "2026-07-21T22:36:08.102276+00:00",
+      "updated_at": "2026-07-21T22:36:08.102331+00:00"
+    },
+    "hyperframes": {
+      "source": "official",
+      "identifier": "official/creative/hyperframes",
+      "trust_level": "builtin",
+      "scan_verdict": "caution",
+      "content_hash": "sha256:ea70a61ac96bc81a",
+      "install_path": "creative/hyperframes",
+      "files": [
+        "SKILL.md",
+        "references/features.md",
+        "references/composition.md",
+        "references/cli.md",
+        "references/website-to-video.md",
+        "references/troubleshooting.md",
+        "references/gsap.md",
+        "scripts/setup.sh"
+      ],
+      "metadata": {},
+      "scan_provenance": {
+        "source": "official",
+        "source_url": "official/creative/hyperframes",
+        "bundle_hash": "sha256:ea70a61ac96bc81a5ea9afdd886a991568e631109b132fd6ccf288d46356cd1e",
+        "scanner_version": "skills-guard-v1",
+        "verdict": "caution",
+        "trust_level": "builtin",
+        "findings": [
+          {
+            "pattern_id": "unpinned_npm_install",
+            "severity": "medium",
+            "category": "supply_chain",
+            "file": "SKILL.md",
+            "line": 63,
+            "match": "2. Installs the `hyperframes` CLI globally (`npm install -g hyperframes@>=0.4.2`).",
+            "description": "npm install without version pinning"
+          },
+          {
+            "pattern_id": "unpinned_npm_install",
+            "severity": "medium",
+            "category": "supply_chain",
+            "file": "references/cli.md",
+            "line": 3,
+            "match": "Everything runs through `npx hyperframes` (or the globally-installed `hyperframes` after `npm install -g hyperframes`...",
+            "description": "npm install without version pinning"
+          },
+          {
+            "pattern_id": "unpinned_npm_install",
+            "severity": "medium",
+            "category": "supply_chain",
+            "file": "references/troubleshooting.md",
+            "line": 20,
+            "match": "npm install -g hyperframes@latest",
+            "description": "npm install without version pinning"
+          },
+          {
+            "pattern_id": "sudo_usage",
+            "severity": "high",
+            "category": "privilege_escalation",
+            "file": "references/troubleshooting.md",
+            "line": 61,
+            "match": "| Ubuntu / Debian | `sudo apt-get install -y ffmpeg`    |",
+            "description": "uses sudo (privilege escalation)"
+          },
+          {
+            "pattern_id": "sudo_usage",
+            "severity": "high",
+            "category": "privilege_escalation",
+            "file": "references/troubleshooting.md",
+            "line": 62,
+            "match": "| Fedora / RHEL   | `sudo dnf install -y ffmpeg`        |",
+            "description": "uses sudo (privilege escalation)"
+          },
+          {
+            "pattern_id": "sudo_usage",
+            "severity": "high",
+            "category": "privilege_escalation",
+            "file": "references/troubleshooting.md",
+            "line": 63,
+            "match": "| Arch            | `sudo pacman -S ffmpeg`             |",
+            "description": "uses sudo (privilege escalation)"
+          },
+          {
+            "pattern_id": "unpinned_npm_install",
+            "severity": "medium",
+            "category": "supply_chain",
+            "file": "scripts/setup.sh",
+            "line": 80,
+            "match": "if ! npm install -g \"hyperframes@latest\" >/dev/null 2>&1; then",
+            "description": "npm install without version pinning"
+          },
+          {
+            "pattern_id": "unpinned_npm_install",
+            "severity": "medium",
+            "category": "supply_chain",
+            "file": "scripts/setup.sh",
+            "line": 81,
+            "match": "red \"✗ npm install -g hyperframes@latest failed.\"",
+            "description": "npm install without version pinning"
+          },
+          {
+            "pattern_id": "unpinned_npm_install",
+            "severity": "medium",
+            "category": "supply_chain",
+            "file": "scripts/setup.sh",
+            "line": 82,
+            "match": "echo \"   Try: sudo npm install -g hyperframes@latest\"",
+            "description": "npm install without version pinning"
+          },
+          {
+            "pattern_id": "unpinned_npm_install",
+            "severity": "medium",
+            "category": "supply_chain",
+            "file": "scripts/setup.sh",
+            "line": 97,
+            "match": "echo \"   Try 'npm install -g hyperframes@latest' or 'sudo npm install -g hyperframes@latest'.\"",
+            "description": "npm install without version pinning"
+          },
+          {
+            "pattern_id": "sudo_usage",
+            "severity": "high",
+            "category": "privilege_escalation",
+            "file": "scripts/setup.sh",
+            "line": 48,
+            "match": "Linux*)   echo \"   sudo apt-get install -y ffmpeg   # Debian/Ubuntu\"",
+            "description": "uses sudo (privilege escalation)"
+          },
+          {
+            "pattern_id": "sudo_usage",
+            "severity": "high",
+            "category": "privilege_escalation",
+            "file": "scripts/setup.sh",
+            "line": 49,
+            "match": "echo \"   sudo dnf install -y ffmpeg       # Fedora/RHEL\";;",
+            "description": "uses sudo (privilege escalation)"
+          },
+          {
+            "pattern_id": "sudo_usage",
+            "severity": "high",
+            "category": "privilege_escalation",
+            "file": "scripts/setup.sh",
+            "line": 82,
+            "match": "echo \"   Try: sudo npm install -g hyperframes@latest\"",
+            "description": "uses sudo (privilege escalation)"
+          },
+          {
+            "pattern_id": "sudo_usage",
+            "severity": "high",
+            "category": "privilege_escalation",
+            "file": "scripts/setup.sh",
+            "line": 97,
+            "match": "echo \"   Try 'npm install -g hyperframes@latest' or 'sudo npm install -g hyperframes@latest'.\"",
+            "description": "uses sudo (privilege escalation)"
+          }
+        ],
+        "rules": [
+          "sudo_usage",
+          "unpinned_npm_install"
+        ],
+        "scanned_at": "2026-07-23T00:10:21.003689+00:00",
+        "summary": "hyperframes: caution — 14 finding(s) in privilege_escalation, supply_chain",
+        "fresh": false
+      },
+      "installed_at": "2026-07-23T00:10:25.174447+00:00",
+      "updated_at": "2026-07-23T00:10:25.174472+00:00"
+    },
+    "kanban-video-orchestrator": {
+      "source": "official",
+      "identifier": "official/creative/kanban-video-orchestrator",
+      "trust_level": "builtin",
+      "scan_verdict": "safe",
+      "content_hash": "sha256:452627bddab80f50",
+      "install_path": "creative/kanban-video-orchestrator",
+      "files": [
+        "SKILL.md",
+        "references/role-archetypes.md",
+        "references/tool-matrix.md",
+        "references/intake.md",
+        "references/kanban-setup.md",
+        "references/examples.md",
+        "references/monitoring.md",
+        "scripts/bootstrap_pipeline.py",
+        "scripts/monitor.py",
+        "assets/brief.md.tmpl",
+        "assets/setup.sh.tmpl",
+        "assets/soul.md.tmpl"
+      ],
+      "metadata": {},
+      "scan_provenance": {
+        "source": "official",
+        "source_url": "official/creative/kanban-video-orchestrator",
+        "bundle_hash": "sha256:452627bddab80f50c2bc14414821bdb7674e7753f0423d256cc3201b633fcce3",
+        "scanner_version": "skills-guard-v1",
+        "verdict": "safe",
+        "trust_level": "builtin",
+        "findings": [
+          {
+            "pattern_id": "unpinned_pip_install",
+            "severity": "medium",
+            "category": "supply_chain",
+            "file": "references/kanban-setup.md",
+            "line": 120,
+            "match": "installs). If absent: `pip install pyyaml`.",
+            "description": "pip install without version pinning"
+          },
+          {
+            "pattern_id": "shell_rc_mod",
+            "severity": "medium",
+            "category": "persistence",
+            "file": "scripts/bootstrap_pipeline.py",
+            "line": 106,
+            "match": "f\"team[{i}].profile {t['profile']!r} must match \"",
+            "description": "references shell startup file"
+          },
+          {
+            "pattern_id": "shell_rc_mod",
+            "severity": "medium",
+            "category": "persistence",
+            "file": "scripts/bootstrap_pipeline.py",
+            "line": 111,
+            "match": "f\"team[{i}].profile {t['profile']!r} is duplicated\"",
+            "description": "references shell startup file"
+          },
+          {
+            "pattern_id": "python_subprocess",
+            "severity": "medium",
+            "category": "execution",
+            "file": "scripts/monitor.py",
+            "line": 37,
+            "match": "out = subprocess.run(",
+            "description": "Python subprocess execution"
+          },
+          {
+            "pattern_id": "python_subprocess",
+            "severity": "medium",
+            "category": "execution",
+            "file": "scripts/monitor.py",
+            "line": 46,
+            "match": "out = subprocess.run(",
+            "description": "Python subprocess execution"
+          },
+          {
+            "pattern_id": "python_subprocess",
+            "severity": "medium",
+            "category": "execution",
+            "file": "scripts/monitor.py",
+            "line": 70,
+            "match": "out = subprocess.run(",
+            "description": "Python subprocess execution"
+          }
+        ],
+        "rules": [
+          "python_subprocess",
+          "shell_rc_mod",
+          "unpinned_pip_install"
+        ],
+        "scanned_at": "2026-07-23T00:10:30.385201+00:00",
+        "summary": "kanban-video-orchestrator: safe — 6 finding(s) in execution, persistence, supply_chain",
+        "fresh": true
+      },
+      "installed_at": "2026-07-23T00:10:30.397972+00:00",
+      "updated_at": "2026-07-23T00:10:30.398002+00:00"
+    },
+    "meme-generation": {
+      "source": "official",
+      "identifier": "official/creative/meme-generation",
+      "trust_level": "builtin",
+      "scan_verdict": "safe",
+      "content_hash": "sha256:4ca5f237d2e40ef7",
+      "install_path": "creative/meme-generation",
+      "files": [
+        "SKILL.md",
+        "EXAMPLES.md",
+        "scripts/generate_meme.py",
+        "scripts/templates.json"
+      ],
+      "metadata": {},
+      "scan_provenance": {
+        "source": "official",
+        "source_url": "official/creative/meme-generation",
+        "bundle_hash": "sha256:4ca5f237d2e40ef729170ee7b4ac58b4e7d8296fbd94bb10867f273d7a7bd3c8",
+        "scanner_version": "skills-guard-v1",
+        "verdict": "safe",
+        "trust_level": "builtin",
+        "findings": [],
+        "rules": [],
+        "scanned_at": "2026-07-23T00:10:35.540184+00:00",
+        "summary": "meme-generation: clean scan, no threats detected",
+        "fresh": true
+      },
+      "installed_at": "2026-07-23T00:10:35.546555+00:00",
+      "updated_at": "2026-07-23T00:10:35.546578+00:00"
+    },
+    "concept-diagrams": {
+      "source": "official",
+      "identifier": "official/creative/concept-diagrams",
+      "trust_level": "builtin",
+      "scan_verdict": "caution",
+      "content_hash": "sha256:b437e78965a6ab9c",
+      "install_path": "creative/concept-diagrams",
+      "files": [
+        "SKILL.md",
+        "templates/template.html",
+        "references/infrastructure-patterns.md",
+        "references/dashboard-patterns.md",
+        "references/physical-shape-cookbook.md",
+        "examples/ml-benchmark-grouped-bar-chart.md",
+        "examples/commercial-aircraft-structure.md",
+        "examples/hospital-emergency-department-flow.md",
+        "examples/banana-journey-tree-to-smoothie.md",
+        "examples/autonomous-llm-research-agent-flow.md",
+        "examples/apartment-floor-plan-conversion.md",
+        "examples/smart-city-infrastructure.md",
+        "examples/sn2-reaction-mechanism.md",
+        "examples/wind-turbine-structure.md",
+        "examples/place-order-uml-sequence.md",
+        "examples/automated-password-reset-flow.md",
+        "examples/cpu-ooo-microarchitecture.md",
+        "examples/smartphone-layer-anatomy.md",
+        "examples/feature-film-production-pipeline.md",
+        "examples/electricity-grid-flow.md"
+      ],
+      "metadata": {},
+      "scan_provenance": {
+        "source": "official",
+        "source_url": "official/creative/concept-diagrams",
+        "bundle_hash": "sha256:b437e78965a6ab9c4141bb2a23a8a80b47318b5bff02cc498fd13adae3fb2105",
+        "scanner_version": "skills-guard-v1",
+        "verdict": "caution",
+        "trust_level": "builtin",
+        "findings": [
+          {
+            "pattern_id": "uv_run",
+            "severity": "medium",
+            "category": "supply_chain",
+            "file": "examples/autonomous-llm-research-agent-flow.md",
+            "line": 101,
+            "match": "<text class=\"ts\" x=\"310\" y=\"392\" text-anchor=\"middle\" dominant-baseline=\"central\">uv run train.py (5 min budget)</text>",
+            "description": "uv run (may auto-install unpinned dependencies)"
+          },
+          {
+            "pattern_id": "html_comment_injection",
+            "severity": "high",
+            "category": "injection",
+            "file": "examples/place-order-uml-sequence.md",
+            "line": 79,
+            "match": "<!-- :InventorySystem -->",
+            "description": "hidden instructions in HTML comments"
+          },
+          {
+            "pattern_id": "html_comment_injection",
+            "severity": "high",
+            "category": "injection",
+            "file": "examples/place-order-uml-sequence.md",
+            "line": 96,
+            "match": "<!-- InventorySystem: active from reserveItems → updateStockLevels end -->",
+            "description": "hidden instructions in HTML comments"
+          },
+          {
+            "pattern_id": "html_comment_injection",
+            "severity": "high",
+            "category": "injection",
+            "file": "examples/place-order-uml-sequence.md",
+            "line": 133,
+            "match": "<!-- ⑤ reserveItems(cartItems)  :OrderController → :InventorySystem -->",
+            "description": "hidden instructions in HTML comments"
+          },
+          {
+            "pattern_id": "html_comment_injection",
+            "severity": "high",
+            "category": "injection",
+            "file": "examples/place-order-uml-sequence.md",
+            "line": 137,
+            "match": "<!-- ⑥ « itemsReserved »  :InventorySystem → :OrderController (dashed return) -->",
+            "description": "hidden instructions in HTML comments"
+          },
+          {
+            "pattern_id": "html_comment_injection",
+            "severity": "high",
+            "category": "injection",
+            "file": "examples/place-order-uml-sequence.md",
+            "line": 165,
+            "match": "<!-- ⑨ updateStockLevels()  :OrderController → :InventorySystem -->",
+            "description": "hidden instructions in HTML comments"
+          },
+          {
+            "pattern_id": "html_comment_injection",
+            "severity": "high",
+            "category": "injection",
+            "file": "examples/place-order-uml-sequence.md",
+            "line": 195,
+            "match": "<!-- ⑬ « unavailable »  :InventorySystem → :OrderController (dashed return) -->",
+            "description": "hidden instructions in HTML comments"
+          },
+          {
+            "pattern_id": "html_comment_injection",
+            "severity": "high",
+            "category": "injection",
+            "file": "examples/automated-password-reset-flow.md",
+            "line": 55,
+            "match": "<!-- D1 · Email in system?  diamond: center=(340,200) hw=100 hh=28 -->",
+            "description": "hidden instructions in HTML comments"
+          },
+          {
+            "pattern_id": "html_comment_injection",
+            "severity": "high",
+            "category": "injection",
+            "file": "examples/automated-password-reset-flow.md",
+            "line": 90,
+            "match": "<!-- ── Center Yes branch: system generates & sends token ── -->",
+            "description": "hidden instructions in HTML comments"
+          }
+        ],
+        "rules": [
+          "html_comment_injection",
+          "uv_run"
+        ],
+        "scanned_at": "2026-07-23T00:10:37.161500+00:00",
+        "summary": "concept-diagrams: caution — 9 finding(s) in injection, supply_chain",
+        "fresh": true
+      },
+      "installed_at": "2026-07-23T00:10:37.171700+00:00",
+      "updated_at": "2026-07-23T00:10:37.171710+00:00"
+    },
+    "docker-management": {
+      "source": "official",
+      "identifier": "official/devops/docker-management",
+      "trust_level": "builtin",
+      "scan_verdict": "dangerous",
+      "content_hash": "sha256:b3b0513a7dc104fa",
+      "install_path": "devops/docker-management",
+      "files": [
+        "SKILL.md"
+      ],
+      "metadata": {},
+      "scan_provenance": {
+        "source": "official",
+        "source_url": "official/devops/docker-management",
+        "bundle_hash": "sha256:b3b0513a7dc104fa799af1e276add569848e0f4e6d339373fc5ba34d598e153b",
+        "scanner_version": "skills-guard-v1",
+        "verdict": "dangerous",
+        "trust_level": "builtin",
+        "findings": [
+          {
+            "pattern_id": "dns_exfil",
+            "severity": "critical",
+            "category": "exfiltration",
+            "file": "SKILL.md",
+            "line": 255,
+            "match": "| Permission denied on volume | UID/GID mismatch host vs container | Use `--user $(id -u):$(id -g)` or fix permissions |",
+            "description": "DNS lookup with variable interpolation (possible DNS exfiltration)"
+          },
+          {
+            "pattern_id": "backtick_subshell",
+            "severity": "medium",
+            "category": "execution",
+            "file": "SKILL.md",
+            "line": 255,
+            "match": "| Permission denied on volume | UID/GID mismatch host vs container | Use `--user $(id -u):$(id -g)` or fix permissions |",
+            "description": "backtick string with command substitution"
+          },
+          {
+            "pattern_id": "docker_pull",
+            "severity": "medium",
+            "category": "supply_chain",
+            "file": "SKILL.md",
+            "line": 133,
+            "match": "docker pull node:20-alpine",
+            "description": "pulls a Docker image at runtime"
+          },
+          {
+            "pattern_id": "sudo_usage",
+            "severity": "high",
+            "category": "privilege_escalation",
+            "file": "SKILL.md",
+            "line": 32,
+            "match": "- User added to the `docker` group (or use `sudo`)",
+            "description": "uses sudo (privilege escalation)"
+          }
+        ],
+        "rules": [
+          "backtick_subshell",
+          "dns_exfil",
+          "docker_pull",
+          "sudo_usage"
+        ],
+        "scanned_at": "2026-07-23T00:18:02.856682+00:00",
+        "summary": "docker-management: dangerous — 4 finding(s) in execution, exfiltration, privilege_escalation, supply_chain",
+        "fresh": true
+      },
+      "installed_at": "2026-07-23T00:18:02.863900+00:00",
+      "updated_at": "2026-07-23T00:18:02.863912+00:00"
+    },
+    "watchers": {
+      "source": "official",
+      "identifier": "official/devops/watchers",
+      "trust_level": "builtin",
+      "scan_verdict": "dangerous",
+      "content_hash": "sha256:bb92ebdc4f387bf1",
+      "install_path": "devops/watchers",
+      "files": [
+        "SKILL.md",
+        "scripts/_watermark.py",
+        "scripts/watch_rss.py",
+        "scripts/watch_github.py",
+        "scripts/watch_http_json.py"
+      ],
+      "metadata": {},
+      "scan_provenance": {
+        "source": "official",
+        "source_url": "official/devops/watchers",
+        "bundle_hash": "sha256:bb92ebdc4f387bf140f75a8f2f7140538101ba9574bf5b332d440cac4a44be3b",
+        "scanner_version": "skills-guard-v1",
+        "verdict": "dangerous",
+        "trust_level": "builtin",
+        "findings": [
+          {
+            "pattern_id": "python_os_environ",
+            "severity": "high",
+            "category": "exfiltration",
+            "file": "scripts/watch_github.py",
+            "line": 118,
+            "match": "token = os.environ.get(\"GITHUB_TOKEN\") or os.environ.get(\"GH_TOKEN\")",
+            "description": "accesses os.environ (potential env dump)"
+          },
+          {
+            "pattern_id": "python_environ_get_secret",
+            "severity": "critical",
+            "category": "exfiltration",
+            "file": "scripts/watch_github.py",
+            "line": 118,
+            "match": "token = os.environ.get(\"GITHUB_TOKEN\") or os.environ.get(\"GH_TOKEN\")",
+            "description": "reads secret via os.environ.get()"
+          }
+        ],
+        "rules": [
+          "python_environ_get_secret",
+          "python_os_environ"
+        ],
+        "scanned_at": "2026-07-23T00:18:05.079188+00:00",
+        "summary": "watchers: dangerous — 2 finding(s) in exfiltration",
+        "fresh": true
+      },
+      "installed_at": "2026-07-23T00:18:05.086670+00:00",
+      "updated_at": "2026-07-23T00:18:05.086680+00:00"
+    },
+    "excel-author": {
+      "source": "official",
+      "identifier": "official/finance/excel-author",
+      "trust_level": "builtin",
+      "scan_verdict": "safe",
+      "content_hash": "sha256:a7b50cbb3ad67441",
+      "install_path": "finance/excel-author",
+      "files": [
+        "SKILL.md",
+        "scripts/recalc.py"
+      ],
+      "metadata": {},
+      "scan_provenance": {
+        "source": "official",
+        "source_url": "official/finance/excel-author",
+        "bundle_hash": "sha256:a7b50cbb3ad674417f2287c991202b6671b80e17ccbd61a7c44ecd77cf9bc18a",
+        "scanner_version": "skills-guard-v1",
+        "verdict": "safe",
+        "trust_level": "builtin",
+        "findings": [
+          {
+            "pattern_id": "unpinned_pip_install",
+            "severity": "medium",
+            "category": "supply_chain",
+            "file": "SKILL.md",
+            "line": 29,
+            "match": "pip install \"openpyxl>=3.0\"",
+            "description": "pip install without version pinning"
+          },
+          {
+            "pattern_id": "python_subprocess",
+            "severity": "medium",
+            "category": "execution",
+            "file": "scripts/recalc.py",
+            "line": 45,
+            "match": "subprocess.run(",
+            "description": "Python subprocess execution"
+          }
+        ],
+        "rules": [
+          "python_subprocess",
+          "unpinned_pip_install"
+        ],
+        "scanned_at": "2026-07-23T00:21:35.666243+00:00",
+        "summary": "excel-author: safe — 2 finding(s) in execution, supply_chain",
+        "fresh": true
+      },
+      "installed_at": "2026-07-23T00:21:35.676032+00:00",
+      "updated_at": "2026-07-23T00:21:35.676043+00:00"
+    },
+    "pptx-author": {
+      "source": "official",
+      "identifier": "official/finance/pptx-author",
+      "trust_level": "builtin",
+      "scan_verdict": "safe",
+      "content_hash": "sha256:4ec63d16a63a7bcb",
+      "install_path": "finance/pptx-author",
+      "files": [
+        "SKILL.md"
+      ],
+      "metadata": {},
+      "scan_provenance": {
+        "source": "official",
+        "source_url": "official/finance/pptx-author",
+        "bundle_hash": "sha256:4ec63d16a63a7bcbf461fd3c042181cb51982afea594f398a24e16c7782b99fa",
+        "scanner_version": "skills-guard-v1",
+        "verdict": "safe",
+        "trust_level": "builtin",
+        "findings": [
+          {
+            "pattern_id": "unpinned_pip_install",
+            "severity": "medium",
+            "category": "supply_chain",
+            "file": "SKILL.md",
+            "line": 30,
+            "match": "pip install \"python-pptx>=0.6\"",
+            "description": "pip install without version pinning"
+          }
+        ],
+        "rules": [
+          "unpinned_pip_install"
+        ],
+        "scanned_at": "2026-07-23T00:21:37.670280+00:00",
+        "summary": "pptx-author: safe — 1 finding(s) in supply_chain",
+        "fresh": true
+      },
+      "installed_at": "2026-07-23T00:21:37.684097+00:00",
+      "updated_at": "2026-07-23T00:21:37.684120+00:00"
+    },
+    "dcf-model": {
+      "source": "official",
+      "identifier": "official/finance/dcf-model",
+      "trust_level": "builtin",
+      "scan_verdict": "safe",
+      "content_hash": "sha256:579d915276b7ff1f",
+      "install_path": "finance/dcf-model",
+      "files": [
+        "requirements.txt",
+        "TROUBLESHOOTING.md",
+        "SKILL.md",
+        "scripts/validate_dcf.py"
+      ],
+      "metadata": {},
+      "scan_provenance": {
+        "source": "official",
+        "source_url": "official/finance/dcf-model",
+        "bundle_hash": "sha256:579d915276b7ff1fd530cce92613da74175d6d3a1f3a7bf3dcc84aee4100fcb4",
+        "scanner_version": "skills-guard-v1",
+        "verdict": "safe",
+        "trust_level": "builtin",
+        "findings": [
+          {
+            "pattern_id": "unpinned_pip_install",
+            "severity": "medium",
+            "category": "supply_chain",
+            "file": "scripts/validate_dcf.py",
+            "line": 19,
+            "match": "raise ImportError(\"openpyxl not installed. Run: pip install openpyxl\")",
+            "description": "pip install without version pinning"
+          }
+        ],
+        "rules": [
+          "unpinned_pip_install"
+        ],
+        "scanned_at": "2026-07-23T00:21:39.979152+00:00",
+        "summary": "dcf-model: safe — 1 finding(s) in supply_chain",
+        "fresh": true
+      },
+      "installed_at": "2026-07-23T00:21:39.984572+00:00",
+      "updated_at": "2026-07-23T00:21:39.984580+00:00"
+    },
+    "adversarial-ux-test": {
+      "source": "official",
+      "identifier": "official/dogfood/adversarial-ux-test",
+      "trust_level": "builtin",
+      "scan_verdict": "safe",
+      "content_hash": "sha256:b191394abf052fa2",
+      "install_path": "dogfood/adversarial-ux-test",
+      "files": [
+        "SKILL.md"
+      ],
+      "metadata": {},
+      "scan_provenance": {
+        "source": "official",
+        "source_url": "official/dogfood/adversarial-ux-test",
+        "bundle_hash": "sha256:b191394abf052fa21bbf39a0385935f24094ab48b6e9239ac284c9c310a51d56",
+        "scanner_version": "skills-guard-v1",
+        "verdict": "safe",
+        "trust_level": "builtin",
+        "findings": [],
+        "rules": [],
+        "scanned_at": "2026-07-24T23:55:06.786330+00:00",
+        "summary": "adversarial-ux-test: clean scan, no threats detected",
+        "fresh": true
+      },
+      "installed_at": "2026-07-24T23:55:15.691170+00:00",
+      "updated_at": "2026-07-24T23:55:15.691181+00:00"
+    },
+    "planning-with-files": {
+      "source": "clawhub",
+      "identifier": "@othmanadi/planning-with-files",
+      "trust_level": "community",
+      "scan_verdict": "caution",
+      "content_hash": "sha256:b8c119f6fc278fb6",
+      "install_path": "planning-with-files",
+      "files": [
+        "examples.md",
+        "reference.md",
+        "scripts/attest-plan.ps1",
+        "scripts/attest-plan.sh",
+        "scripts/check-complete.ps1",
+        "scripts/check-complete.sh",
+        "scripts/gate-stop.sh",
+        "scripts/init-session.ps1",
+        "scripts/init-session.sh",
+        "scripts/inject-plan.py",
+        "scripts/inject-plan.sh",
+        "scripts/ledger-append.ps1",
+        "scripts/ledger-append.sh",
+        "scripts/ledger-summary.ps1",
+        "scripts/ledger-summary.sh",
+        "scripts/phase-status.ps1",
+        "scripts/phase-status.sh",
+        "scripts/plan-doctor.sh",
+        "scripts/resolve-plan-dir.ps1",
+        "scripts/resolve-plan-dir.sh",
+        "scripts/session-catchup.py",
+        "scripts/set-active-plan.ps1",
+        "scripts/set-active-plan.sh",
+        "scripts/skill-hook.sh",
+        "skill-card.md",
+        "SKILL.md",
+        "templates/analytics_findings.md",
+        "templates/analytics_task_plan.md",
+        "templates/findings.md",
+        "templates/loop.md",
+        "templates/progress.md",
+        "templates/task_plan_autonomous.md",
+        "templates/task_plan.md",
+        "_meta.json"
+      ],
+      "metadata": {},
+      "scan_provenance": {
+        "bundle_hash": "sha256:b8c119f6fc278fb640cb14841408fec561966a779cf67329cdfd262b533d3848",
+        "scanner_version": "skills-guard-v5",
+        "source": "@othmanadi/planning-with-files",
+        "source_url": "@othmanadi/planning-with-files",
+        "verdict": "caution",
+        "trust_level": "community",
+        "findings": [
+          {
+            "pattern_id": "backtick_subshell",
+            "severity": "medium",
+            "category": "execution",
+            "file": "SKILL.md",
+            "line": 263,
+            "match": "`PLAN_ID` is a slug resolved against the current directory, so it can only ever name a plan under `$(pwd)/.planning`....",
+            "description": "backtick string with command substitution"
+          },
+          {
+            "pattern_id": "allowed_tools_field",
+            "severity": "low",
+            "category": "privilege_escalation",
+            "file": "SKILL.md",
+            "line": 5,
+            "match": "allowed-tools: \"Read Write Edit Bash Glob Grep\"",
+            "description": "skill declares allowed-tools (standard frontmatter; informational)"
+          },
+          {
+            "pattern_id": "python_os_environ",
+            "severity": "high",
+            "category": "exfiltration",
+            "file": "scripts/inject-plan.py",
+            "line": 761,
+            "match": "self.env = os.environ if env is None else env",
+            "description": "accesses os.environ outside comments/docstrings (potential env dump)"
+          },
+          {
+            "pattern_id": "python_os_environ",
+            "severity": "high",
+            "category": "exfiltration",
+            "file": "scripts/inject-plan.py",
+            "line": 1344,
+            "match": "env = os.environ if env is None else env",
+            "description": "accesses os.environ outside comments/docstrings (potential env dump)"
+          },
+          {
+            "pattern_id": "python_os_environ",
+            "severity": "high",
+            "category": "exfiltration",
+            "file": "scripts/inject-plan.py",
+            "line": 1443,
+            "match": "self.env = os.environ if env is None else env",
+            "description": "accesses os.environ outside comments/docstrings (potential env dump)"
+          },
+          {
+            "pattern_id": "hex_encoded_string",
+            "severity": "medium",
+            "category": "obfuscation",
+            "file": "scripts/inject-plan.py",
+            "line": 103,
+            "match": "_UTF8_BOM = b\"\\xef\\xbb\\xbf\"",
+            "description": "hex-encoded string (possible obfuscation)"
+          },
+          {
+            "pattern_id": "hex_encoded_string",
+            "severity": "medium",
+            "category": "obfuscation",
+            "file": "scripts/inject-plan.py",
+            "line": 104,
+            "match": "_CHECKED_RE = re.compile(rb\"^[ \\t\\x0b\\x0c\\r]*-[ \\t\\x0b\\x0c\\r]*\\[[xX]\\]\")",
+            "description": "hex-encoded string (possible obfuscation)"
+          },
+          {
+            "pattern_id": "python_subprocess",
+            "severity": "medium",
+            "category": "execution",
+            "file": "scripts/inject-plan.py",
+            "line": 1285,
+            "match": "result = subprocess.run(",
+            "description": "Python subprocess execution"
+          },
+          {
+            "pattern_id": "python_subprocess",
+            "severity": "medium",
+            "category": "execution",
+            "file": "scripts/inject-plan.py",
+            "line": 1524,
+            "match": "result = subprocess.run(",
+            "description": "Python subprocess execution"
+          },
+          {
+            "pattern_id": "backtick_subshell",
+            "severity": "medium",
+            "category": "execution",
+            "file": "scripts/skill-hook.sh",
+            "line": 52,
+            "match": "# the old `$(command -v ...)` plus a `-c` version probe cost three of them on",
+            "description": "backtick string with command substitution"
+          },
+          {
+            "pattern_id": "python_os_environ",
+            "severity": "high",
+            "category": "exfiltration",
+            "file": "scripts/session-catchup.py",
+            "line": 419,
+            "match": "base = Path(os.environ['OPENCODE_DATA_DIR'])",
+            "description": "accesses os.environ outside comments/docstrings (potential env dump)"
+          }
+        ],
+        "rules": [
+          "allowed_tools_field",
+          "backtick_subshell",
+          "hex_encoded_string",
+          "python_os_environ",
+          "python_subprocess"
+        ],
+        "scanned_at": "2026-09-21T00:25:07.454642+00:00",
+        "summary": "planning-with-files: caution — 11 finding(s) in execution, exfiltration, obfuscation, privilege_escalation",
+        "fresh": false
+      },
+      "installed_at": "2026-09-21T00:26:43.621059+00:00",
+      "updated_at": "2026-09-21T00:26:43.621059+00:00"
+    },
+    "understand": {
+      "source": "clawhub",
+      "identifier": "@lum1104/understand",
+      "trust_level": "community",
+      "scan_verdict": "safe",
+      "content_hash": "sha256:24596c0c8cdb742b",
+      "install_path": "understand",
+      "files": [
+        "architecture-analyzer-prompt.md",
+        "file-analyzer-prompt.md",
+        "graph-reviewer-prompt.md",
+        "project-scanner-prompt.md",
+        "skill-card.md",
+        "SKILL.md",
+        "tour-builder-prompt.md",
+        "_meta.json"
+      ],
+      "metadata": {},
+      "scan_provenance": {
+        "bundle_hash": "sha256:24596c0c8cdb742b29061345a0e2b21e72de6b6f61e1dac3c8a13866e6f83018",
+        "scanner_version": "skills-guard-v5",
+        "source": "@lum1104/understand",
+        "source_url": "@lum1104/understand",
+        "verdict": "safe",
+        "trust_level": "community",
+        "findings": [],
+        "rules": [],
+        "scanned_at": "2026-09-21T00:28:01.950372+00:00",
+        "summary": "understand: clean scan, no threats detected",
+        "fresh": true
+      },
+      "installed_at": "2026-09-21T00:28:44.544635+00:00",
+      "updated_at": "2026-09-21T00:28:44.544635+00:00"
+    },
+    "caveman-compress-mode": {
+      "source": "clawhub",
+      "identifier": "@liyafeichina/caveman-compress-mode",
+      "trust_level": "community",
+      "scan_verdict": "safe",
+      "content_hash": "sha256:7e47067950c75091",
+      "install_path": "caveman-compress-mode",
+      "files": [
+        "skill-card.md",
+        "SKILL.md",
+        "_meta.json"
+      ],
+      "metadata": {},
+      "scan_provenance": {
+        "bundle_hash": "sha256:7e47067950c7509119388c7e5276e13101dff32deec4400825923ad88c1d8385",
+        "scanner_version": "skills-guard-v5",
+        "source": "@liyafeichina/caveman-compress-mode",
+        "source_url": "@liyafeichina/caveman-compress-mode",
+        "verdict": "safe",
+        "trust_level": "community",
+        "findings": [],
+        "rules": [],
+        "scanned_at": "2026-09-21T00:43:35.582137+00:00",
+        "summary": "caveman-compress-mode: clean scan, no threats detected",
+        "fresh": true
+      },
+      "installed_at": "2026-09-21T00:43:38.344695+00:00",
+      "updated_at": "2026-09-21T00:43:38.344695+00:00"
+    },
+    "context7-mcp": {
+      "source": "skills.sh",
+      "identifier": "skills-sh/upstash/context7/context7-mcp",
+      "trust_level": "community",
+      "scan_verdict": "safe",
+      "content_hash": "sha256:e233221857b77832",
+      "install_path": "context7-mcp",
+      "files": [
+        "SKILL.md"
+      ],
+      "metadata": {
+        "source_url": "https://github.com/upstash/context7/tree/e275a848a420e0d11c2822f61201ee005bfd1133/skills/context7-mcp",
+        "source_revision": "e275a848a420e0d11c2822f61201ee005bfd1133",
+        "detail_url": "https://skills.sh/upstash/context7/context7-mcp",
+        "repo_url": "https://github.com/upstash/context7"
+      },
+      "scan_provenance": {
+        "bundle_hash": "sha256:e233221857b7783279d74400702bcca138b4db63398a250e1062ad2864800f6a",
+        "scanner_version": "skills-guard-v6",
+        "source": "skills-sh/upstash/context7/context7-mcp",
+        "source_url": "https://github.com/upstash/context7/tree/e275a848a420e0d11c2822f61201ee005bfd1133/skills/context7-mcp",
+        "verdict": "safe",
+        "trust_level": "community",
+        "findings": [],
+        "rules": [],
+        "scanned_at": "2026-09-26T23:28:06.449209+00:00",
+        "summary": "context7-mcp: clean scan, no threats detected",
+        "fresh": false
+      },
+      "installed_at": "2026-09-26T23:28:30.957065+00:00",
+      "updated_at": "2026-09-26T23:28:30.957065+00:00"
+    }
+  }
+}

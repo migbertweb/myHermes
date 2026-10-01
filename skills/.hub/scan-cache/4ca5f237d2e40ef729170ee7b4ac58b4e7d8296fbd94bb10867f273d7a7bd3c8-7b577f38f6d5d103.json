@@ -1,0 +1,13 @@
+{
+  "source": "official",
+  "source_url": "official/creative/meme-generation",
+  "bundle_hash": "sha256:4ca5f237d2e40ef729170ee7b4ac58b4e7d8296fbd94bb10867f273d7a7bd3c8",
+  "scanner_version": "skills-guard-v1",
+  "verdict": "safe",
+  "trust_level": "builtin",
+  "findings": [],
+  "rules": [],
+  "scanned_at": "2026-07-23T00:10:35.540184+00:00",
+  "summary": "meme-generation: clean scan, no threats detected",
+  "fresh": true
+}

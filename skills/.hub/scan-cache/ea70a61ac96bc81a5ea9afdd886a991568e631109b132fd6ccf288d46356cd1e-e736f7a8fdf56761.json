@@ -1,0 +1,143 @@
+{
+  "source": "official",
+  "source_url": "official/creative/hyperframes",
+  "bundle_hash": "sha256:ea70a61ac96bc81a5ea9afdd886a991568e631109b132fd6ccf288d46356cd1e",
+  "scanner_version": "skills-guard-v1",
+  "verdict": "caution",
+  "trust_level": "builtin",
+  "findings": [
+    {
+      "pattern_id": "unpinned_npm_install",
+      "severity": "medium",
+      "category": "supply_chain",
+      "file": "SKILL.md",
+      "line": 63,
+      "match": "2. Installs the `hyperframes` CLI globally (`npm install -g hyperframes@>=0.4.2`).",
+      "description": "npm install without version pinning"
+    },
+    {
+      "pattern_id": "unpinned_npm_install",
+      "severity": "medium",
+      "category": "supply_chain",
+      "file": "references/cli.md",
+      "line": 3,
+      "match": "Everything runs through `npx hyperframes` (or the globally-installed `hyperframes` after `npm install -g hyperframes`...",
+      "description": "npm install without version pinning"
+    },
+    {
+      "pattern_id": "unpinned_npm_install",
+      "severity": "medium",
+      "category": "supply_chain",
+      "file": "references/troubleshooting.md",
+      "line": 20,
+      "match": "npm install -g hyperframes@latest",
+      "description": "npm install without version pinning"
+    },
+    {
+      "pattern_id": "sudo_usage",
+      "severity": "high",
+      "category": "privilege_escalation",
+      "file": "references/troubleshooting.md",
+      "line": 61,
+      "match": "| Ubuntu / Debian | `sudo apt-get install -y ffmpeg`    |",
+      "description": "uses sudo (privilege escalation)"
+    },
+    {
+      "pattern_id": "sudo_usage",
+      "severity": "high",
+      "category": "privilege_escalation",
+      "file": "references/troubleshooting.md",
+      "line": 62,
+      "match": "| Fedora / RHEL   | `sudo dnf install -y ffmpeg`        |",
+      "description": "uses sudo (privilege escalation)"
+    },
+    {
+      "pattern_id": "sudo_usage",
+      "severity": "high",
+      "category": "privilege_escalation",
+      "file": "references/troubleshooting.md",
+      "line": 63,
+      "match": "| Arch            | `sudo pacman -S ffmpeg`             |",
+      "description": "uses sudo (privilege escalation)"
+    },
+    {
+      "pattern_id": "unpinned_npm_install",
+      "severity": "medium",
+      "category": "supply_chain",
+      "file": "scripts/setup.sh",
+      "line": 80,
+      "match": "if ! npm install -g \"hyperframes@latest\" >/dev/null 2>&1; then",
+      "description": "npm install without version pinning"
+    },
+    {
+      "pattern_id": "unpinned_npm_install",
+      "severity": "medium",
+      "category": "supply_chain",
+      "file": "scripts/setup.sh",
+      "line": 81,
+      "match": "red \"\u2717 npm install -g hyperframes@latest failed.\"",
+      "description": "npm install without version pinning"
+    },
+    {
+      "pattern_id": "unpinned_npm_install",
+      "severity": "medium",
+      "category": "supply_chain",
+      "file": "scripts/setup.sh",
+      "line": 82,
+      "match": "echo \"   Try: sudo npm install -g hyperframes@latest\"",
+      "description": "npm install without version pinning"
+    },
+    {
+      "pattern_id": "unpinned_npm_install",
+      "severity": "medium",
+      "category": "supply_chain",
+      "file": "scripts/setup.sh",
+      "line": 97,
+      "match": "echo \"   Try 'npm install -g hyperframes@latest' or 'sudo npm install -g hyperframes@latest'.\"",
+      "description": "npm install without version pinning"
+    },
+    {
+      "pattern_id": "sudo_usage",
+      "severity": "high",
+      "category": "privilege_escalation",
+      "file": "scripts/setup.sh",
+      "line": 48,
+      "match": "Linux*)   echo \"   sudo apt-get install -y ffmpeg   # Debian/Ubuntu\"",
+      "description": "uses sudo (privilege escalation)"
+    },
+    {
+      "pattern_id": "sudo_usage",
+      "severity": "high",
+      "category": "privilege_escalation",
+      "file": "scripts/setup.sh",
+      "line": 49,
+      "match": "echo \"   sudo dnf install -y ffmpeg       # Fedora/RHEL\";;",
+      "description": "uses sudo (privilege escalation)"
+    },
+    {
+      "pattern_id": "sudo_usage",
+      "severity": "high",
+      "category": "privilege_escalation",
+      "file": "scripts/setup.sh",
+      "line": 82,
+      "match": "echo \"   Try: sudo npm install -g hyperframes@latest\"",
+      "description": "uses sudo (privilege escalation)"
+    },
+    {
+      "pattern_id": "sudo_usage",
+      "severity": "high",
+      "category": "privilege_escalation",
+      "file": "scripts/setup.sh",
+      "line": 97,
+      "match": "echo \"   Try 'npm install -g hyperframes@latest' or 'sudo npm install -g hyperframes@latest'.\"",
+      "description": "uses sudo (privilege escalation)"
+    }
+  ],
+  "rules": [
+    "sudo_usage",
+    "unpinned_npm_install"
+  ],
+  "scanned_at": "2026-07-23T00:10:21.003689+00:00",
+  "summary": "hyperframes: caution \u2014 14 finding(s) in privilege_escalation, supply_chain",
+  "fresh": true
+}

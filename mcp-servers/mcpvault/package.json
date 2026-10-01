@@ -1,0 +1,83 @@
+{
+  "name": "@bitbonsai/mcpvault",
+  "version": "0.16.0",
+  "description": "Universal AI bridge for Obsidian vaults - connect any MCP-compatible assistant",
+  "homepage": "https://mcpvault.org",
+  "author": "bitbonsai",
+  "license": "MIT",
+  "type": "module",
+  "packageManager": "npm@10.9.0+sha512.65a9c38a8172948f617a53619762cd77e12b9950fe1f9239debcb8d62c652f2081824b986fee7c0af6c0a7df615becebe4bf56e17ec27214a87aa29d9e038b4b",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/src/index.js",
+      "types": "./dist/src/index.d.ts"
+    }
+  },
+  "bin": {
+    "mcpvault": "dist/server.js"
+  },
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "tsx server.ts",
+    "website": "cd website && bun dev",
+    "build": "tsc --project tsconfig.build.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build && npm test",
+    "prepack": "npm install",
+    "publish:dry": "npm publish --dry-run",
+    "publish:beta": "npm publish --tag beta",
+    "publish:latest": "npm publish",
+    "ship": "bun scripts/ship.ts",
+    "ship:setup": "bun scripts/ship.ts --setup",
+    "ship:update": "bun scripts/ship.ts --update"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "^2.0.0",
+    "gray-matter": "^4.0.3",
+    "trash": "^10.1.1",
+    "yaml": "^2.9.0"
+  },
+  "devDependencies": {
+    "@clack/prompts": "^1.7.0",
+    "@modelcontextprotocol/client": "^2.0.0",
+    "@types/node": "^26.5.1",
+    "tsx": "^4.23.9",
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.10"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bitbonsai/mcpvault.git"
+  },
+  "keywords": [
+    "mcp",
+    "obsidian",
+    "model-context-protocol",
+    "universal",
+    "ai-bridge",
+    "mcp-server",
+    "claude",
+    "chatgpt",
+    "ai",
+    "knowledge-management",
+    "pkm",
+    "vault",
+    "notes",
+    "markdown",
+    "future-proof",
+    "open-standard"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}

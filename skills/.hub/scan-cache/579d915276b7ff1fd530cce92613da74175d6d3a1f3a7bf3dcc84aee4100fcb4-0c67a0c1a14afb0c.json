@@ -1,0 +1,25 @@
+{
+  "source": "official",
+  "source_url": "official/finance/dcf-model",
+  "bundle_hash": "sha256:579d915276b7ff1fd530cce92613da74175d6d3a1f3a7bf3dcc84aee4100fcb4",
+  "scanner_version": "skills-guard-v1",
+  "verdict": "safe",
+  "trust_level": "builtin",
+  "findings": [
+    {
+      "pattern_id": "unpinned_pip_install",
+      "severity": "medium",
+      "category": "supply_chain",
+      "file": "scripts/validate_dcf.py",
+      "line": 19,
+      "match": "raise ImportError(\"openpyxl not installed. Run: pip install openpyxl\")",
+      "description": "pip install without version pinning"
+    }
+  ],
+  "rules": [
+    "unpinned_pip_install"
+  ],
+  "scanned_at": "2026-07-23T00:21:39.979152+00:00",
+  "summary": "dcf-model: safe \u2014 1 finding(s) in supply_chain",
+  "fresh": true
+}

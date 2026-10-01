@@ -8,10 +8,7 @@ hermes-agent/
 tools/
 installs/
 lsp/
-plugins/
-mcp-servers/
 impeccable-repo/
-skills/
 node_modules/
 __pycache__/
 *.pyc

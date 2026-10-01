@@ -1,0 +1,9 @@
+{
+  "last_report_path": "/home/migbert/.hermes/logs/curator/20260928-222817",
+  "last_run_at": "2026-09-28T22:28:17.686302+00:00",
+  "last_run_duration_seconds": 19.932891,
+  "last_run_summary": "auto: 2 marked stale, 14 archived, 5 reactivated; llm: skipped (consolidation off)",
+  "last_run_summary_shown_at": "2026-09-28T22:28:17.686302+00:00",
+  "paused": false,
+  "run_count": 17
+}

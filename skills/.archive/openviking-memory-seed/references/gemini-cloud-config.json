@@ -1,0 +1,28 @@
+{
+  "comment": "OpenViking ov.conf using Gemini for both embedding and VLM. Free tier. No local Ollama RAM/CPU.",
+  "storage": {
+    "workspace": "/home/migbert/.openviking/data",
+    "agfs": { "backend": "local" },
+    "vectordb": { "backend": "local" }
+  },
+  "embedding": {
+    "dense": {
+      "provider": "gemini",
+      "api_key": "<GEMINI_API_KEY>",
+      "model": "gemini-embedding-exp-03-07",
+      "dimension": 768
+    }
+  },
+  "vlm": {
+    "provider": "openai",
+    "api_base": "https://generativelanguage.googleapis.com/v1beta/openai/",
+    "api_key": "<GEMINI_API_KEY>",
+    "model": "gemini-2.0-flash",
+    "timeout": 30,
+    "max_retries": 2
+  },
+  "server": {
+    "host": "127.0.0.1",
+    "port": 1933
+  }
+}

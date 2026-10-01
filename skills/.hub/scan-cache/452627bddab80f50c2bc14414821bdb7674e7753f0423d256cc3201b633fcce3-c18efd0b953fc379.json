@@ -1,0 +1,72 @@
+{
+  "source": "official",
+  "source_url": "official/creative/kanban-video-orchestrator",
+  "bundle_hash": "sha256:452627bddab80f50c2bc14414821bdb7674e7753f0423d256cc3201b633fcce3",
+  "scanner_version": "skills-guard-v1",
+  "verdict": "safe",
+  "trust_level": "builtin",
+  "findings": [
+    {
+      "pattern_id": "unpinned_pip_install",
+      "severity": "medium",
+      "category": "supply_chain",
+      "file": "references/kanban-setup.md",
+      "line": 120,
+      "match": "installs). If absent: `pip install pyyaml`.",
+      "description": "pip install without version pinning"
+    },
+    {
+      "pattern_id": "shell_rc_mod",
+      "severity": "medium",
+      "category": "persistence",
+      "file": "scripts/bootstrap_pipeline.py",
+      "line": 106,
+      "match": "f\"team[{i}].profile {t['profile']!r} must match \"",
+      "description": "references shell startup file"
+    },
+    {
+      "pattern_id": "shell_rc_mod",
+      "severity": "medium",
+      "category": "persistence",
+      "file": "scripts/bootstrap_pipeline.py",
+      "line": 111,
+      "match": "f\"team[{i}].profile {t['profile']!r} is duplicated\"",
+      "description": "references shell startup file"
+    },
+    {
+      "pattern_id": "python_subprocess",
+      "severity": "medium",
+      "category": "execution",
+      "file": "scripts/monitor.py",
+      "line": 37,
+      "match": "out = subprocess.run(",
+      "description": "Python subprocess execution"
+    },
+    {
+      "pattern_id": "python_subprocess",
+      "severity": "medium",
+      "category": "execution",
+      "file": "scripts/monitor.py",
+      "line": 46,
+      "match": "out = subprocess.run(",
+      "description": "Python subprocess execution"
+    },
+    {
+      "pattern_id": "python_subprocess",
+      "severity": "medium",
+      "category": "execution",
+      "file": "scripts/monitor.py",
+      "line": 70,
+      "match": "out = subprocess.run(",
+      "description": "Python subprocess execution"
+    }
+  ],
+  "rules": [
+    "python_subprocess",
+    "shell_rc_mod",
+    "unpinned_pip_install"
+  ],
+  "scanned_at": "2026-07-23T00:10:30.385201+00:00",
+  "summary": "kanban-video-orchestrator: safe \u2014 6 finding(s) in execution, persistence, supply_chain",
+  "fresh": true
+}

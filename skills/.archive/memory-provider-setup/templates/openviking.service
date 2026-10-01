@@ -1,0 +1,22 @@
+[Unit]
+Description=OpenViking Memory Server for Hermes Agent
+Documentation=https://docs.openviking.ai
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/home/migbert/.hermes/hermes-agent/venv/bin/openviking-server --config /home/migbert/.openviking/ov.conf
+WorkingDirectory=/home/migbert/.openviking
+Environment="PATH=/home/migbert/.hermes/hermes-agent/venv/bin:/usr/bin:/usr/local/bin"
+Environment="OPENVIKING_ENDPOINT=http://localhost:1933"
+Environment="OPENVIKING_ACCOUNT=migbert"
+Environment="OPENVIKING_USER=migbert"
+Environment="OPENVIKING_AGENT=hermes"
+Restart=on-failure
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=default.target

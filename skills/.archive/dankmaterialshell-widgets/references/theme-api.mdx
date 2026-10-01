@@ -1,0 +1,77 @@
+# Theme API Reference for DankBar Widgets
+
+## `Theme.barIconSize(thickness, offset, maximizeWidgetIcons, iconScale)`
+
+Returns pixel size for icons in the bar, computed dynamically from bar config.
+
+| # | Param | Type | Description |
+|---|-------|------|-------------|
+| 1 | `thickness` | `real` | Bar thickness in pixels — pass `root.barThickness` |
+| 2 | `offset` | `variant` | Pixel adjustment: `undefined` for default, or number `-4` to shrink |
+| 3 | `maximizeWidgetIcons` | `bool?` | From `root.barConfig?.maximizeWidgetIcons` — generally signals "use larger size" |
+| 4 | `iconScale` | `real?` | From `root.barConfig?.iconScale` — multiplier for fine-grained scaling |
+
+## `Theme.barTextSize(thickness, fontScale, maximizeWidgetText)`
+
+Returns font pixelSize for text in the bar, computed dynamically from bar config.
+
+| # | Param | Type | Description |
+|---|-------|------|-------------|
+| 1 | `thickness` | `real` | Bar thickness — pass `root.barThickness` |
+| 2 | `fontScale` | `real?` | From `root.barConfig?.fontScale` — text scaling multiplier |
+| 3 | `maximizeWidgetText` | `bool?` | From `root.barConfig?.maximizeWidgetText` — larger text toggle |
+
+## Example Usage (from system widgets)
+
+### Horizontal (Row layout)
+```qml
+Row {
+    spacing: Theme.spacingXS
+    anchors.verticalCenter: parent.verticalCenter
+
+    DankIcon {
+        name: "memory"
+        size: Theme.barIconSize(root.barThickness, undefined, root.barConfig?.maximizeWidgetIcons, root.barConfig?.iconScale)
+        color: Theme.widgetIconColor
+        anchors.verticalCenter: parent.verticalCenter
+    }
+
+    StyledText {
+        text: "45%"
+        font.pixelSize: Theme.barTextSize(root.barThickness, root.barConfig?.fontScale, root.barConfig?.maximizeWidgetText)
+        color: Theme.widgetTextColor
+        anchors.verticalCenter: parent.verticalCenter
+    }
+}
+```
+
+### Vertical (Column layout)
+```qml
+Column {
+    spacing: 1
+    anchors.centerIn: parent
+
+    DankIcon {
+        name: "memory"
+        size: Theme.barIconSize(root.barThickness, undefined, root.barConfig?.maximizeWidgetIcons, root.barConfig?.iconScale)
+        anchors.horizontalCenter: parent.horizontalCenter
+    }
+
+    StyledText {
+        text: "45%"
+        font.pixelSize: Theme.barTextSize(root.barThickness, root.barConfig?.fontScale, root.barConfig?.maximizeWidgetText)
+        anchors.horizontalCenter: parent.horizontalCenter
+    }
+}
+```
+
+## Common Mistakes
+
+❌ `size: Theme.barIconSize(root.barThickness, undefined, root.barConfig?.noBackground)`  
+✅ `size: Theme.barIconSize(root.barThickness, undefined, root.barConfig?.maximizeWidgetIcons, root.barConfig?.iconScale)`
+
+❌ `font.pixelSize: Theme.barTextSize(root.barThickness, root.barConfig?.fontScale)`  
+✅ `font.pixelSize: Theme.barTextSize(root.barThickness, root.barConfig?.fontScale, root.barConfig?.maximizeWidgetText)`
+
+❌ `font.pixelSize: Theme.fontSizeSmall` / `size: Theme.iconSizeSmall`  
+✅ Always use the dynamic `barIconSize`/`barTextSize` variants for bar widgets, even in vertical orientation.

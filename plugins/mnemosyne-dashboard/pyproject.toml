@@ -1,0 +1,36 @@
+[project]
+name = "mnemosyne-dashboard"
+version = "0.14.0"
+description = "Local-only read-only web dashboard for Mnemosyne memory stores."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Agent Hammy" }]
+keywords = ["hermes-agent", "mnemosyne", "memory", "dashboard", "sqlite"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Web Environment",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Database :: Front-Ends",
+]
+
+[project.urls]
+Homepage = "https://github.com/Wysie/mnemosyne-dashboard"
+Issues = "https://github.com/Wysie/mnemosyne-dashboard/issues"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["E501", "E402"]

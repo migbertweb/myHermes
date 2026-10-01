@@ -1,0 +1,13 @@
+{
+  "bundle_hash": "sha256:7e47067950c7509119388c7e5276e13101dff32deec4400825923ad88c1d8385",
+  "scanner_version": "skills-guard-v5",
+  "source": "@liyafeichina/caveman-compress-mode",
+  "source_url": "@liyafeichina/caveman-compress-mode",
+  "verdict": "safe",
+  "trust_level": "community",
+  "findings": [],
+  "rules": [],
+  "scanned_at": "2026-09-21T00:43:35.582137+00:00",
+  "summary": "caveman-compress-mode: clean scan, no threats detected",
+  "fresh": true
+}

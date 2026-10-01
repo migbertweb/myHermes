@@ -1,0 +1,35 @@
+{
+  "source": "official",
+  "source_url": "official/devops/watchers",
+  "bundle_hash": "sha256:bb92ebdc4f387bf140f75a8f2f7140538101ba9574bf5b332d440cac4a44be3b",
+  "scanner_version": "skills-guard-v1",
+  "verdict": "dangerous",
+  "trust_level": "builtin",
+  "findings": [
+    {
+      "pattern_id": "python_os_environ",
+      "severity": "high",
+      "category": "exfiltration",
+      "file": "scripts/watch_github.py",
+      "line": 118,
+      "match": "token = os.environ.get(\"GITHUB_TOKEN\") or os.environ.get(\"GH_TOKEN\")",
+      "description": "accesses os.environ (potential env dump)"
+    },
+    {
+      "pattern_id": "python_environ_get_secret",
+      "severity": "critical",
+      "category": "exfiltration",
+      "file": "scripts/watch_github.py",
+      "line": 118,
+      "match": "token = os.environ.get(\"GITHUB_TOKEN\") or os.environ.get(\"GH_TOKEN\")",
+      "description": "reads secret via os.environ.get()"
+    }
+  ],
+  "rules": [
+    "python_environ_get_secret",
+    "python_os_environ"
+  ],
+  "scanned_at": "2026-07-23T00:18:05.079188+00:00",
+  "summary": "watchers: dangerous \u2014 2 finding(s) in exfiltration",
+  "fresh": true
+}

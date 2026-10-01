@@ -1,0 +1,55 @@
+{
+  "source": "official",
+  "source_url": "official/devops/docker-management",
+  "bundle_hash": "sha256:b3b0513a7dc104fa799af1e276add569848e0f4e6d339373fc5ba34d598e153b",
+  "scanner_version": "skills-guard-v1",
+  "verdict": "dangerous",
+  "trust_level": "builtin",
+  "findings": [
+    {
+      "pattern_id": "dns_exfil",
+      "severity": "critical",
+      "category": "exfiltration",
+      "file": "SKILL.md",
+      "line": 255,
+      "match": "| Permission denied on volume | UID/GID mismatch host vs container | Use `--user $(id -u):$(id -g)` or fix permissions |",
+      "description": "DNS lookup with variable interpolation (possible DNS exfiltration)"
+    },
+    {
+      "pattern_id": "backtick_subshell",
+      "severity": "medium",
+      "category": "execution",
+      "file": "SKILL.md",
+      "line": 255,
+      "match": "| Permission denied on volume | UID/GID mismatch host vs container | Use `--user $(id -u):$(id -g)` or fix permissions |",
+      "description": "backtick string with command substitution"
+    },
+    {
+      "pattern_id": "docker_pull",
+      "severity": "medium",
+      "category": "supply_chain",
+      "file": "SKILL.md",
+      "line": 133,
+      "match": "docker pull node:20-alpine",
+      "description": "pulls a Docker image at runtime"
+    },
+    {
+      "pattern_id": "sudo_usage",
+      "severity": "high",
+      "category": "privilege_escalation",
+      "file": "SKILL.md",
+      "line": 32,
+      "match": "- User added to the `docker` group (or use `sudo`)",
+      "description": "uses sudo (privilege escalation)"
+    }
+  ],
+  "rules": [
+    "backtick_subshell",
+    "dns_exfil",
+    "docker_pull",
+    "sudo_usage"
+  ],
+  "scanned_at": "2026-07-23T00:18:02.856682+00:00",
+  "summary": "docker-management: dangerous \u2014 4 finding(s) in execution, exfiltration, privilege_escalation, supply_chain",
+  "fresh": true
+}

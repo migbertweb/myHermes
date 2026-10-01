@@ -1,0 +1,372 @@
+{
+  "bundle_hash": "sha256:cd5d719de9523ca3e013546330e38f2b7281f36c0f167098e28c701716207f90",
+  "scanner_version": "skills-guard-v5",
+  "source": "skills-sh/cathrynlavery/diagram-design/diagram-design",
+  "source_url": "https://github.com/cathrynlavery/diagram-design/tree/dc1ace47b99a419e42d01a03cb6ace5346efa8ae/skills/diagram-design",
+  "verdict": "dangerous",
+  "trust_level": "community",
+  "findings": [
+    {
+      "pattern_id": "too_many_files",
+      "severity": "medium",
+      "category": "structural",
+      "file": "(directory)",
+      "line": 0,
+      "match": "236 files",
+      "description": "skill has 236 files (limit: 50)"
+    },
+    {
+      "pattern_id": "unpinned_pip_install",
+      "severity": "medium",
+      "category": "supply_chain",
+      "file": "references/export.md",
+      "line": 81,
+      "match": "> pip install playwright",
+      "description": "pip install without version pinning"
+    },
+    {
+      "pattern_id": "agent_config_ref",
+      "severity": "low",
+      "category": "persistence",
+      "file": "references/type-nested.md",
+      "line": 3,
+      "match": "**Best for:** hierarchy through containment \u2014 scope boundaries, CLAUDE.md cascade, trust zones, folder nesting, blast...",
+      "description": "references agent config files (informational; only modification intent is scored)"
+    },
+    {
+      "pattern_id": "unpinned_pip_install",
+      "severity": "medium",
+      "category": "supply_chain",
+      "file": "references/doctor.md",
+      "line": 47,
+      "match": "- `pip install playwright && playwright install chromium`",
+      "description": "pip install without version pinning"
+    },
+    {
+      "pattern_id": "unpinned_pip_install",
+      "severity": "medium",
+      "category": "supply_chain",
+      "file": "references/doctor.md",
+      "line": 125,
+      "match": "- Install PNG export dependencies: pip install playwright && playwright install chromium",
+      "description": "pip install without version pinning"
+    },
+    {
+      "pattern_id": "invisible_unicode",
+      "severity": "high",
+      "category": "injection",
+      "file": "scripts/drawio_extract.py",
+      "line": 176,
+      "match": "U+FEFF (BOM/zero-width no-break space)",
+      "description": "invisible unicode character BOM/zero-width no-break space (possible text hiding/injection)"
+    },
+    {
+      "pattern_id": "agent_config_mod_shell",
+      "severity": "critical",
+      "category": "persistence",
+      "file": "assets/example-flowchart-full.html",
+      "line": 108,
+      "match": "<text x=\"800\" y=\"376\" fill=\"#2d3142\" font-size=\"12\" font-weight=\"600\" font-family=\"'Geist', sans-serif\" text-anchor=\"...",
+      "description": "shell write (redirect/sed -i/tee/cp/mv) targeting agent config files (persistence mechanism)"
+    },
+    {
+      "pattern_id": "agent_config_ref",
+      "severity": "low",
+      "category": "persistence",
+      "file": "assets/example-flowchart-full.html",
+      "line": 106,
+      "match": "<!-- End oval: CLAUDE.md note -->",
+      "description": "references agent config files (informational; only modification intent is scored)"
+    },
+    {
+      "pattern_id": "agent_config_ref",
+      "severity": "low",
+      "category": "persistence",
+      "file": "assets/example-flowchart-full.html",
+      "line": 108,
+      "match": "<text x=\"800\" y=\"376\" fill=\"#2d3142\" font-size=\"12\" font-weight=\"600\" font-family=\"'Geist', sans-serif\" text-anchor=\"...",
+      "description": "references agent config files (informational; only modification intent is scored)"
+    },
+    {
+      "pattern_id": "agent_config_mod_shell",
+      "severity": "critical",
+      "category": "persistence",
+      "file": "assets/example-flowchart-dark.html",
+      "line": 127,
+      "match": "<text x=\"800\" y=\"376\" fill=\"#f5f5f5\" font-size=\"12\" font-weight=\"600\" font-family=\"'Geist', sans-serif\" text-anchor=\"...",
+      "description": "shell write (redirect/sed -i/tee/cp/mv) targeting agent config files (persistence mechanism)"
+    },
+    {
+      "pattern_id": "agent_config_ref",
+      "severity": "low",
+      "category": "persistence",
+      "file": "assets/example-flowchart-dark.html",
+      "line": 125,
+      "match": "<!-- End oval: CLAUDE.md note -->",
+      "description": "references agent config files (informational; only modification intent is scored)"
+    },
+    {
+      "pattern_id": "agent_config_ref",
+      "severity": "low",
+      "category": "persistence",
+      "file": "assets/example-flowchart-dark.html",
+      "line": 127,
+      "match": "<text x=\"800\" y=\"376\" fill=\"#f5f5f5\" font-size=\"12\" font-weight=\"600\" font-family=\"'Geist', sans-serif\" text-anchor=\"...",
+      "description": "references agent config files (informational; only modification intent is scored)"
+    },
+    {
+      "pattern_id": "html_comment_injection",
+      "severity": "high",
+      "category": "injection",
+      "file": "assets/example-high-level-vertical.html",
+      "line": 104,
+      "match": "<!-- Security (middle): notch on top, point on bottom \u2014 chevron color override #b85450 to pair with Identity bar -->",
+      "description": "hidden instructions in HTML comments"
+    },
+    {
+      "pattern_id": "html_comment_injection",
+      "severity": "high",
+      "category": "injection",
+      "file": "assets/example-high-level-vertical.html",
+      "line": 121,
+      "match": "<!-- Identity / cross-cutting bar  (color override: #b85450 rust-red) -->",
+      "description": "hidden instructions in HTML comments"
+    },
+    {
+      "pattern_id": "agent_config_mod_shell",
+      "severity": "critical",
+      "category": "persistence",
+      "file": "assets/example-nested-full.html",
+      "line": 100,
+      "match": "<text x=\"500\" y=\"248\" fill=\"#2d3142\" font-size=\"16\" font-weight=\"600\" font-family=\"'Geist', sans-serif\" text-anchor=\"...",
+      "description": "shell write (redirect/sed -i/tee/cp/mv) targeting agent config files (persistence mechanism)"
+    },
+    {
+      "pattern_id": "agent_config_ref",
+      "severity": "low",
+      "category": "persistence",
+      "file": "assets/example-nested-full.html",
+      "line": 6,
+      "match": "<title>The CLAUDE.md Hierarchy</title>",
+      "description": "references agent config files (informational; only modification intent is scored)"
+    },
+    {
+      "pattern_id": "agent_config_ref",
+      "severity": "low",
+      "category": "persistence",
+      "file": "assets/example-nested-full.html",
+      "line": 37,
+      "match": "<h1>The CLAUDE.md Hierarchy</h1>",
+      "description": "references agent config files (informational; only modification intent is scored)"
+    },
+    {
+      "pattern_id": "agent_config_ref",
+      "severity": "low",
+      "category": "persistence",
+      "file": "assets/example-nested-full.html",
+      "line": 43,
+      "match": "<title id=\"nested-full-title\">The CLAUDE.md Hierarchy</title>",
+      "description": "references agent config files (informational; only modification intent is scored)"
+    },
+    {
+      "pattern_id": "agent_config_ref",
+      "severity": "low",
+      "category": "persistence",
+      "file": "assets/example-nested-full.html",
+      "line": 44,
+      "match": "<desc id=\"nested-full-desc\">Nested diagram showing how project CLAUDE.md instructions inherit broader scopes from the...",
+      "description": "references agent config files (informational; only modification intent is scored)"
+    },
+    {
+      "pattern_id": "agent_config_ref",
+      "severity": "low",
+      "category": "persistence",
+      "file": "assets/example-nested-full.html",
+      "line": 100,
+      "match": "<text x=\"500\" y=\"248\" fill=\"#2d3142\" font-size=\"16\" font-weight=\"600\" font-family=\"'Geist', sans-serif\" text-anchor=\"...",
+      "description": "references agent config files (informational; only modification intent is scored)"
+    },
+    {
+      "pattern_id": "agent_config_ref",
+      "severity": "low",
+      "category": "persistence",
+      "file": "assets/example-nested-full.html",
+      "line": 117,
+      "match": "<p>Every CLAUDE.md inside a parent folder implicitly wraps the one below. No manifest, no import graph \u2014 the file tre...",
+      "description": "references agent config files (informational; only modification intent is scored)"
+    },
+    {
+      "pattern_id": "agent_config_ref",
+      "severity": "low",
+      "category": "persistence",
+      "file": "assets/example-nested-full.html",
+      "line": 130,
+      "match": "<span>the claude.md hierarchy \u00b7 nested containment</span>",
+      "description": "references agent config files (informational; only modification intent is scored)"
+    },
+    {
+      "pattern_id": "agent_config_mod_shell",
+      "severity": "critical",
+      "category": "persistence",
+      "file": "assets/example-nested-dark.html",
+      "line": 119,
+      "match": "<text x=\"500\" y=\"248\" fill=\"#f5f5f5\" font-size=\"16\" font-weight=\"600\" font-family=\"'Geist', sans-serif\" text-anchor=\"...",
+      "description": "shell write (redirect/sed -i/tee/cp/mv) targeting agent config files (persistence mechanism)"
+    },
+    {
+      "pattern_id": "agent_config_ref",
+      "severity": "low",
+      "category": "persistence",
+      "file": "assets/example-nested-dark.html",
+      "line": 6,
+      "match": "<title>The CLAUDE.md Hierarchy</title>",
+      "description": "references agent config files (informational; only modification intent is scored)"
+    },
+    {
+      "pattern_id": "agent_config_ref",
+      "severity": "low",
+      "category": "persistence",
+      "file": "assets/example-nested-dark.html",
+      "line": 59,
+      "match": "<h1>The CLAUDE.md Hierarchy</h1>",
+      "description": "references agent config files (informational; only modification intent is scored)"
+    },
+    {
+      "pattern_id": "agent_config_ref",
+      "severity": "low",
+      "category": "persistence",
+      "file": "assets/example-nested-dark.html",
+      "line": 62,
+      "match": "<title id=\"nested-dark-title\">The CLAUDE.md Hierarchy</title>",
+      "description": "references agent config files (informational; only modification intent is scored)"
+    },
+    {
+      "pattern_id": "agent_config_ref",
+      "severity": "low",
+      "category": "persistence",
+      "file": "assets/example-nested-dark.html",
+      "line": 63,
+      "match": "<desc id=\"nested-dark-desc\">Nested diagram showing how project CLAUDE.md instructions inherit broader scopes from the...",
+      "description": "references agent config files (informational; only modification intent is scored)"
+    },
+    {
+      "pattern_id": "agent_config_ref",
+      "severity": "low",
+      "category": "persistence",
+      "file": "assets/example-nested-dark.html",
+      "line": 119,
+      "match": "<text x=\"500\" y=\"248\" fill=\"#f5f5f5\" font-size=\"16\" font-weight=\"600\" font-family=\"'Geist', sans-serif\" text-anchor=\"...",
+      "description": "references agent config files (informational; only modification intent is scored)"
+    },
+    {
+      "pattern_id": "agent_config_mod_shell",
+      "severity": "critical",
+      "category": "persistence",
+      "file": "assets/example-nested.html",
+      "line": 123,
+      "match": "<text x=\"500\" y=\"248\" fill=\"#2d3142\" font-size=\"16\" font-weight=\"600\" font-family=\"'Geist', sans-serif\" text-anchor=\"...",
+      "description": "shell write (redirect/sed -i/tee/cp/mv) targeting agent config files (persistence mechanism)"
+    },
+    {
+      "pattern_id": "agent_config_ref",
+      "severity": "low",
+      "category": "persistence",
+      "file": "assets/example-nested.html",
+      "line": 6,
+      "match": "<title>The CLAUDE.md Hierarchy</title>",
+      "description": "references agent config files (informational; only modification intent is scored)"
+    },
+    {
+      "pattern_id": "agent_config_ref",
+      "severity": "low",
+      "category": "persistence",
+      "file": "assets/example-nested.html",
+      "line": 59,
+      "match": "<h1>The CLAUDE.md Hierarchy</h1>",
+      "description": "references agent config files (informational; only modification intent is scored)"
+    },
+    {
+      "pattern_id": "agent_config_ref",
+      "severity": "low",
+      "category": "persistence",
+      "file": "assets/example-nested.html",
+      "line": 62,
+      "match": "<title id=\"nested-title\">The CLAUDE.md Hierarchy</title>",
+      "description": "references agent config files (informational; only modification intent is scored)"
+    },
+    {
+      "pattern_id": "agent_config_ref",
+      "severity": "low",
+      "category": "persistence",
+      "file": "assets/example-nested.html",
+      "line": 63,
+      "match": "<desc id=\"nested-desc\">Nested diagram showing how project CLAUDE.md instructions inherit broader scopes from the glob...",
+      "description": "references agent config files (informational; only modification intent is scored)"
+    },
+    {
+      "pattern_id": "agent_config_ref",
+      "severity": "low",
+      "category": "persistence",
+      "file": "assets/example-nested.html",
+      "line": 123,
+      "match": "<text x=\"500\" y=\"248\" fill=\"#2d3142\" font-size=\"16\" font-weight=\"600\" font-family=\"'Geist', sans-serif\" text-anchor=\"...",
+      "description": "references agent config files (informational; only modification intent is scored)"
+    },
+    {
+      "pattern_id": "agent_config_mod_shell",
+      "severity": "critical",
+      "category": "persistence",
+      "file": "assets/example-flowchart.html",
+      "line": 127,
+      "match": "<text x=\"800\" y=\"376\" fill=\"#2d3142\" font-size=\"12\" font-weight=\"600\" font-family=\"'Geist', sans-serif\" text-anchor=\"...",
+      "description": "shell write (redirect/sed -i/tee/cp/mv) targeting agent config files (persistence mechanism)"
+    },
+    {
+      "pattern_id": "agent_config_ref",
+      "severity": "low",
+      "category": "persistence",
+      "file": "assets/example-flowchart.html",
+      "line": 125,
+      "match": "<!-- End oval: CLAUDE.md note -->",
+      "description": "references agent config files (informational; only modification intent is scored)"
+    },
+    {
+      "pattern_id": "agent_config_ref",
+      "severity": "low",
+      "category": "persistence",
+      "file": "assets/example-flowchart.html",
+      "line": 127,
+      "match": "<text x=\"800\" y=\"376\" fill=\"#2d3142\" font-size=\"12\" font-weight=\"600\" font-family=\"'Geist', sans-serif\" text-anchor=\"...",
+      "description": "references agent config files (informational; only modification intent is scored)"
+    },
+    {
+      "pattern_id": "html_comment_injection",
+      "severity": "high",
+      "category": "injection",
+      "file": "assets/example-high-level.html",
+      "line": 183,
+      "match": "<!-- \u2500\u2500 Legacy System \u2500\u2500 -->",
+      "description": "hidden instructions in HTML comments"
+    },
+    {
+      "pattern_id": "html_comment_injection",
+      "severity": "high",
+      "category": "injection",
+      "file": "assets/example-high-level-dark.html",
+      "line": 146,
+      "match": "<!-- Legacy System -->",
+      "description": "hidden instructions in HTML comments"
+    }
+  ],
+  "rules": [
+    "agent_config_mod_shell",
+    "agent_config_ref",
+    "html_comment_injection",
+    "invisible_unicode",
+    "too_many_files",
+    "unpinned_pip_install"
+  ],
+  "scanned_at": "2026-09-21T00:34:32.770355+00:00",
+  "summary": "diagram-design: dangerous \u2014 39 finding(s) in injection, persistence, structural, supply_chain",
+  "fresh": true
+}

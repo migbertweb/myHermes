@@ -1,0 +1,13 @@
+{
+  "bundle_hash": "sha256:24596c0c8cdb742b29061345a0e2b21e72de6b6f61e1dac3c8a13866e6f83018",
+  "scanner_version": "skills-guard-v5",
+  "source": "@lum1104/understand",
+  "source_url": "@lum1104/understand",
+  "verdict": "safe",
+  "trust_level": "community",
+  "findings": [],
+  "rules": [],
+  "scanned_at": "2026-09-21T00:28:01.950372+00:00",
+  "summary": "understand: clean scan, no threats detected",
+  "fresh": true
+}

@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: ${{ matrix.python-version }}
+      - uses: actions/setup-node@v6
+        with:
+          node-version: "24"
+      - name: Install test tooling
+        run: python -m pip install --upgrade pip pytest ruff
+      - name: Ruff lint
+        run: python -m ruff check .
+      - name: Python tests
+        run: python -m pytest -q
+      - name: Compile Python
+        run: python -m compileall -q .
+      - name: Check JavaScript syntax
+        run: node --check static/app.js

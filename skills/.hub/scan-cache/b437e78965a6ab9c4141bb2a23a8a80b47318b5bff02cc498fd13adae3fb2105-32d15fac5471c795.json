@@ -1,0 +1,98 @@
+{
+  "source": "official",
+  "source_url": "official/creative/concept-diagrams",
+  "bundle_hash": "sha256:b437e78965a6ab9c4141bb2a23a8a80b47318b5bff02cc498fd13adae3fb2105",
+  "scanner_version": "skills-guard-v1",
+  "verdict": "caution",
+  "trust_level": "builtin",
+  "findings": [
+    {
+      "pattern_id": "uv_run",
+      "severity": "medium",
+      "category": "supply_chain",
+      "file": "examples/autonomous-llm-research-agent-flow.md",
+      "line": 101,
+      "match": "<text class=\"ts\" x=\"310\" y=\"392\" text-anchor=\"middle\" dominant-baseline=\"central\">uv run train.py (5 min budget)</text>",
+      "description": "uv run (may auto-install unpinned dependencies)"
+    },
+    {
+      "pattern_id": "html_comment_injection",
+      "severity": "high",
+      "category": "injection",
+      "file": "examples/place-order-uml-sequence.md",
+      "line": 79,
+      "match": "<!-- :InventorySystem -->",
+      "description": "hidden instructions in HTML comments"
+    },
+    {
+      "pattern_id": "html_comment_injection",
+      "severity": "high",
+      "category": "injection",
+      "file": "examples/place-order-uml-sequence.md",
+      "line": 96,
+      "match": "<!-- InventorySystem: active from reserveItems \u2192 updateStockLevels end -->",
+      "description": "hidden instructions in HTML comments"
+    },
+    {
+      "pattern_id": "html_comment_injection",
+      "severity": "high",
+      "category": "injection",
+      "file": "examples/place-order-uml-sequence.md",
+      "line": 133,
+      "match": "<!-- \u2464 reserveItems(cartItems)  :OrderController \u2192 :InventorySystem -->",
+      "description": "hidden instructions in HTML comments"
+    },
+    {
+      "pattern_id": "html_comment_injection",
+      "severity": "high",
+      "category": "injection",
+      "file": "examples/place-order-uml-sequence.md",
+      "line": 137,
+      "match": "<!-- \u2465 \u00ab itemsReserved \u00bb  :InventorySystem \u2192 :OrderController (dashed return) -->",
+      "description": "hidden instructions in HTML comments"
+    },
+    {
+      "pattern_id": "html_comment_injection",
+      "severity": "high",
+      "category": "injection",
+      "file": "examples/place-order-uml-sequence.md",
+      "line": 165,
+      "match": "<!-- \u2468 updateStockLevels()  :OrderController \u2192 :InventorySystem -->",
+      "description": "hidden instructions in HTML comments"
+    },
+    {
+      "pattern_id": "html_comment_injection",
+      "severity": "high",
+      "category": "injection",
+      "file": "examples/place-order-uml-sequence.md",
+      "line": 195,
+      "match": "<!-- \u246c \u00ab unavailable \u00bb  :InventorySystem \u2192 :OrderController (dashed return) -->",
+      "description": "hidden instructions in HTML comments"
+    },
+    {
+      "pattern_id": "html_comment_injection",
+      "severity": "high",
+      "category": "injection",
+      "file": "examples/automated-password-reset-flow.md",
+      "line": 55,
+      "match": "<!-- D1 \u00b7 Email in system?  diamond: center=(340,200) hw=100 hh=28 -->",
+      "description": "hidden instructions in HTML comments"
+    },
+    {
+      "pattern_id": "html_comment_injection",
+      "severity": "high",
+      "category": "injection",
+      "file": "examples/automated-password-reset-flow.md",
+      "line": 90,
+      "match": "<!-- \u2500\u2500 Center Yes branch: system generates & sends token \u2500\u2500 -->",
+      "description": "hidden instructions in HTML comments"
+    }
+  ],
+  "rules": [
+    "html_comment_injection",
+    "uv_run"
+  ],
+  "scanned_at": "2026-07-23T00:10:37.161500+00:00",
+  "summary": "concept-diagrams: caution \u2014 9 finding(s) in injection, supply_chain",
+  "fresh": true
+}

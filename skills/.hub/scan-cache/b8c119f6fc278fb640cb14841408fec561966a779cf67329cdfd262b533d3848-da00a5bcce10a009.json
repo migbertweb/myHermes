@@ -1,0 +1,119 @@
+{
+  "bundle_hash": "sha256:b8c119f6fc278fb640cb14841408fec561966a779cf67329cdfd262b533d3848",
+  "scanner_version": "skills-guard-v5",
+  "source": "@othmanadi/planning-with-files",
+  "source_url": "@othmanadi/planning-with-files",
+  "verdict": "caution",
+  "trust_level": "community",
+  "findings": [
+    {
+      "pattern_id": "backtick_subshell",
+      "severity": "medium",
+      "category": "execution",
+      "file": "SKILL.md",
+      "line": 263,
+      "match": "`PLAN_ID` is a slug resolved against the current directory, so it can only ever name a plan under `$(pwd)/.planning`....",
+      "description": "backtick string with command substitution"
+    },
+    {
+      "pattern_id": "allowed_tools_field",
+      "severity": "low",
+      "category": "privilege_escalation",
+      "file": "SKILL.md",
+      "line": 5,
+      "match": "allowed-tools: \"Read Write Edit Bash Glob Grep\"",
+      "description": "skill declares allowed-tools (standard frontmatter; informational)"
+    },
+    {
+      "pattern_id": "python_os_environ",
+      "severity": "high",
+      "category": "exfiltration",
+      "file": "scripts/inject-plan.py",
+      "line": 761,
+      "match": "self.env = os.environ if env is None else env",
+      "description": "accesses os.environ outside comments/docstrings (potential env dump)"
+    },
+    {
+      "pattern_id": "python_os_environ",
+      "severity": "high",
+      "category": "exfiltration",
+      "file": "scripts/inject-plan.py",
+      "line": 1344,
+      "match": "env = os.environ if env is None else env",
+      "description": "accesses os.environ outside comments/docstrings (potential env dump)"
+    },
+    {
+      "pattern_id": "python_os_environ",
+      "severity": "high",
+      "category": "exfiltration",
+      "file": "scripts/inject-plan.py",
+      "line": 1443,
+      "match": "self.env = os.environ if env is None else env",
+      "description": "accesses os.environ outside comments/docstrings (potential env dump)"
+    },
+    {
+      "pattern_id": "hex_encoded_string",
+      "severity": "medium",
+      "category": "obfuscation",
+      "file": "scripts/inject-plan.py",
+      "line": 103,
+      "match": "_UTF8_BOM = b\"\\xef\\xbb\\xbf\"",
+      "description": "hex-encoded string (possible obfuscation)"
+    },
+    {
+      "pattern_id": "hex_encoded_string",
+      "severity": "medium",
+      "category": "obfuscation",
+      "file": "scripts/inject-plan.py",
+      "line": 104,
+      "match": "_CHECKED_RE = re.compile(rb\"^[ \\t\\x0b\\x0c\\r]*-[ \\t\\x0b\\x0c\\r]*\\[[xX]\\]\")",
+      "description": "hex-encoded string (possible obfuscation)"
+    },
+    {
+      "pattern_id": "python_subprocess",
+      "severity": "medium",
+      "category": "execution",
+      "file": "scripts/inject-plan.py",
+      "line": 1285,
+      "match": "result = subprocess.run(",
+      "description": "Python subprocess execution"
+    },
+    {
+      "pattern_id": "python_subprocess",
+      "severity": "medium",
+      "category": "execution",
+      "file": "scripts/inject-plan.py",
+      "line": 1524,
+      "match": "result = subprocess.run(",
+      "description": "Python subprocess execution"
+    },
+    {
+      "pattern_id": "backtick_subshell",
+      "severity": "medium",
+      "category": "execution",
+      "file": "scripts/skill-hook.sh",
+      "line": 52,
+      "match": "# the old `$(command -v ...)` plus a `-c` version probe cost three of them on",
+      "description": "backtick string with command substitution"
+    },
+    {
+      "pattern_id": "python_os_environ",
+      "severity": "high",
+      "category": "exfiltration",
+      "file": "scripts/session-catchup.py",
+      "line": 419,
+      "match": "base = Path(os.environ['OPENCODE_DATA_DIR'])",
+      "description": "accesses os.environ outside comments/docstrings (potential env dump)"
+    }
+  ],
+  "rules": [
+    "allowed_tools_field",
+    "backtick_subshell",
+    "hex_encoded_string",
+    "python_os_environ",
+    "python_subprocess"
+  ],
+  "scanned_at": "2026-09-21T00:25:07.454642+00:00",
+  "summary": "planning-with-files: caution \u2014 11 finding(s) in execution, exfiltration, obfuscation, privilege_escalation",
+  "fresh": true
+}
