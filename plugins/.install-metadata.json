@@ -23,6 +23,11 @@
     "revision": "a918e5e0841fdc85baad7ab582432b2b7499b2f2",
     "source": "https://github.com/wysie/mnemosyne-dashboard"
   },
+  "planning-with-files": {
+    "pinned": false,
+    "revision": "dab9d16fbd9314448b319d112e99f497d7638d89",
+    "source": "https://github.com/OthmanAdi/planning-with-files.git#.hermes/plugins/planning-with-files"
+  },
   "ponytail": {
     "pinned": false,
     "revision": "e3ba2aa6f1e6f0bc4d69eb09c9f0d0a93af56156",

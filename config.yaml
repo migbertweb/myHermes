@@ -536,6 +536,7 @@ plugins:
     - hermes-mnemosyne
     - mnemosyne
     - mnemosyne-dashboard
+    - planning-with-files
     - ponytail
     - superpowers
   entries:
