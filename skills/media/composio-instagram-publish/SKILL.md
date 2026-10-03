@@ -21,25 +21,44 @@ el server (serverhogar) necesita video_url público o staging en sandbox remoto.
 - MCP nativo Hermes: server `composio` en `~/.hermes/config.yaml` → `url: https://connect.composio.dev/mcp` + `x-consumer-api-key` desde `COMPOSIO_API_KEY`.
 - Verificación: `hermes mcp test composio` → tools incluyen `INSTAGRAM_POST_IG_USER_MEDIA`, `INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH`, `INSTAGRAM_GET_IG_MEDIA`, etc.
 
-## Requisito previo: video accesible públicamente
-Meta necesita descargar el MP4. La forma correcta en el server es usar el microservicio **video_link_extractor** que ya existe en `/home/piro/proyectos/video_link_extractor/`.
+## Requisito previo: control de qué está publicado y qué falta + URLs válidas para Meta
 
-### Generar URLs públicas para Meta
+El microservicio **video_link_extractor** (`/home/piro/proyectos/video_link_extractor/`) lista los videos locales del server. **El CLI con username/password genera tokens de sesión TRUNCADOS** (Meta devuelve 401/ERROR). 
+
+### Fix crítico: usar FILEBROWSER_TOKEN (API token) directamente
 ```bash
-cd /home/piro/proyectos/video_link_extractor && python cli.py --folder "/sync/Shorts"
+# En .env: FILEBROWSER_TOKEN=eyJhbG... (token completo, 303 chars, 3 partes JWT)
+# El CLI debe usar este token, NO username/password
 ```
-Salida JSON con `direct_url` y `stream_url` (ambas incluyen JWT en `auth=` query param, sin headers extra).
-- `stream_url`: NO usar con Composio/Meta → responde 520 con user-agent facebookexternalhit y `curl -A facebookexternalhit` devuelve 16 bytes. Causa container ERROR.
-- `direct_url` de `/api/resources/download`: usar SIEMPRE. Responde 200 con `Content-Type: video/mp4` para cualquier user-agent y Meta descarga correctamente. Soporta Range implícito.
 
-> **Nota**: el CLI funciona standalone (no requiere el server FastAPI corriendo). Si se desea API REST, levantar con `docker compose up` y consultar `GET /api/videos` con `Authorization: Bearer <API_TOKEN>`.
-
-## Flujo completo (CLI + video_link_extractor + inteligente-hashtags)
-
-### 0. Obtener URL pública del video y generar hashtags
+### 0. Listar videos locales (genera `videos.json` con JWTs completos)
 ```bash
-cd /home/piro/proyectos/video_link_extractor && python cli.py --folder "/sync/Shorts" > shorts.json
-# Buscar el video deseado en shorts.json y copiar su "direct_url" y "title"
+cd /home/piro/proyectos/video_link_extractor
+source venv/bin/activate  # si no existe, crear venv
+python cli.py -o videos.json  # solo si videos.json no existe
+```
+- El CLI usa `FILEBROWSER_TOKEN` del `.env` → `direct_url` con JWT completo válido
+- `stream_url`: **NO** usar con Composio/Meta → responde 520 con user-agent facebookexternalhit, causando container ERROR.
+- `direct_url` de `/api/resources/download`: usar **SIEMPRE**. Responde 200 con `Content-Type: video/mp4` para cualquier user-agent. Soporta Range implícito.
+
+> El CLI funciona standalone (no requiere el server FastAPI corriendo).
+
+### 0b. Comparar con Instagram (genera `instagram_comparison.json`)
+Obtén los Reels de tu cuenta con Composio (tool `INSTAGRAM_GET_IG_USER_MEDIA` o similar) y compara sus captions/títulos con los títulos de `videos.json`. El script de comparación crea `instagram_comparison.json` con:
+- `published`: videos locales que ya tienen su Reel en IG (con `match_score`).
+- `missing`: títulos de videos locales **sin** publicar (fuente del `direct_url` para el paso 1).
+- `other_instagram_reels`: captions de Reels que no coinciden con ningún video local.
+
+```bash
+python compare.py videos.json --ig-file ig_reels.json -o instagram_comparison.json
+```
+
+## Flujo completo (CLI + comparación + inteligente-hashtags)
+
+### 0. Listar videos y generar hashtags
+```bash
+cd /home/piro/proyectos/video_link_extractor && python cli.py -o videos.json
+# Buscar el video deseado en instagram_comparison.json (sección missing) y copiar su direct_url y title
 ```
 
 ### 0.5 Generar hashtags inteligentes (nuevo)
@@ -116,7 +135,7 @@ if __name__ == "__main__":
 composio execute INSTAGRAM_POST_IG_USER_MEDIA -d '{
   "ig_user_id": "28194571276874046",
   "media_type": "REELS",
-  "video_url": "https://file.migbertweb.xyz/api/resources/download?file=/sync/Shorts/Tu_Video.mp4&viewToken=...&source=Shared&auth=...",
+  "video_url": "https://file.migbertweb.xyz/api/resources/download?file=/sync/Shorts/Tu_Video.mp4&source=Shared&auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
   "caption": "Tu caption con #hashtags_generados",
   "share_to_feed": true
 }'
@@ -169,13 +188,13 @@ ffprobe -v error -select_streams v:0 -show_entries stream=width,height,codec_nam
 - **Portada:** `cover_url` si quieres thumbnail custom.
 
 ## Pitfalls
-- **Usar `video_link_extractor` para generar URLs** — Meta falla con URLs que redireccionan, tienen query strings extraños o son landing pages. El `stream_url` del extractor es directo y soporta Range.
+- **Usar `FILEBROWSER_TOKEN` (API token) del `.env`, NO username/password** — el token de sesión que genera username/password es truncado por Filebrowser Quantum y Meta devuelve 401/ERROR. El CLI ya usa el API token si está configurado.
 - **`creation_id` ≠ `ig_media_id`** — el primero es el container, el segundo el media publicado.
-- **Reintentar publish del mismo `creation_id` → HTTP 409**. Si el container termina en `ERROR`, crear uno NUEVO.
+- **Reintentar publish del mismo `creation_id` → HTTP 409**. Si el container termina en `ERROR`, crear uno NUEVO con `direct_url` fresco.
 - **Solo Business/Creator accounts** — Personal falla 400/403 (code 100, subcode 33).
 - **Cuota diaria** — consultar `INSTAGRAM_GET_IG_USER_CONTENT_PUBLISHING_LIMIT` antes de bursts.
 - **`max_wait_seconds: 0` saltea polling** → falla 9007 si el container aún procesa (común en video).
-- **El JWT en query param expira** — generar la URL justo antes de publicar (el CLI renueva el token cada ejecución).
+- **El JWT en query param expira** — generar la URL justo antes de publicar (el CLI con API token renueva el token cada ejecución).
 
 ## Flujo MCP (remote workbench) — para server sin URL pública
 ```python
