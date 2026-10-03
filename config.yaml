@@ -266,7 +266,7 @@ display:
   credits_notices: true
   turn_completion_explainer: true
   show_cost: false
-  skin: dracula
+  skin: dracula-piro
   language: es
   tui_status_indicator: kaomoji
   cli_refresh_interval: 1

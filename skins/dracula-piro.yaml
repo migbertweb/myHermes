@@ -1,6 +1,6 @@
 # Dracula — deep purple night with pink, cyan, and green neon accents.
 # Based on the Dracula base16 color palette by Mike Barkmin.
-name: dracula
+name: dracula-piro
 description: "Dracula Theme — deep purple night with pink, cyan, and green neon accents. Based on base16 Dracula palette."
 
 colors:
@@ -8,7 +8,7 @@ colors:
   banner_border: "#62d6e8"   # base0D — cyan
   banner_title:  "#ea51b2"   # base08 — pink/magenta
   banner_accent: "#a1efe4"   # base0C — seafoam
-  banner_dim:    "#626483"   # base03 — muted
+  banner_dim:    "#a1efe4"   # base0C — seafoam (más claro)
   banner_text:   "#e9e9f4"   # base05 — foreground
 
   # UI
@@ -19,15 +19,15 @@ colors:
   ui_warn:   "#ebff87"       # base0B — yellow
 
   # Input / output
-  prompt:          "#e9e9f4" # base05 — foreground
-  input_rule:      "#626483" # base03 — muted
+  prompt:          "#62d6e8" # base0D — cyan (verde azulado)
+  input_rule:      "#a1efe4" # base0C — seafoam (más claro)
   response_border: "#ea51b2" # base08 — pink
 
   # Status bar (deep purple bg)
   status_bar_bg:       "#282936" # base00 — background
   status_bar_text:     "#e9e9f4" # base05 — foreground
   status_bar_strong:   "#62d6e8" # base0D — cyan
-  status_bar_dim:      "#626483" # base03 — muted
+  status_bar_dim:      "#a1efe4" # base0C — seafoam (más claro)
   status_bar_good:     "#00f769" # base0A — green
   status_bar_warn:     "#ebff87" # base0B — yellow
   status_bar_bad:      "#b45bcf" # base09 — purple
@@ -42,7 +42,7 @@ colors:
 
   # Session
   session_label:  "#a1efe4" # base0C — seafoam
-  session_border: "#626483" # base03 — muted
+  session_border: "#a1efe4" # base0C — seafoam (más claro)
 
 spinner:
   waiting_faces:
